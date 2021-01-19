@@ -185,20 +185,179 @@ body {
 .painters-card {
   width: 260px;
   height: 340px;
+  color: #fff;
   overflow: hidden;
 }
 
 .painter-avatar-wrapper {
-  width: 70px;
-  height: 70px;
+  text-align: center;
 }
 
 .painter-avatar {
   width: 70px;
 }
 
-.painter-bg-img {
+.painter-bg {
+  position: relative;
+  z-index: 2;
   height: 100%;
-  opacity: 0.8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.5)), to(rgba(0, 0, 0, 0.4)));
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.painter-bg-img {
+  position: relative;
+  z-index: 1;
+  margin-top: -340px;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.painter-bg-img-url-1 {
+  background-image: url("../img/artists/oksana_svizhak/sea.jpg");
+}
+
+.painter-bg-img-url-2 {
+  background-image: url("../img/artists/marian_luniv/bg.jpg");
+}
+
+.painter-bg-img-url-3 {
+  background-image: url("../img/artists/sviatoslav_bazyuk/bg.jpg");
+}
+
+.painter-bg-img-url-4 {
+  background-image: url("../img/artists/kateryna_pyatak/bg.jpg");
+}
+
+.photographer-bg-img-url-1 {
+  background-image: url("../img/photographers/mariya_andriichuk/bg.jpg");
+}
+
+.photographer-bg-img-url-2 {
+  background-image: url("../img/photographers/yuriy_zilinskiy/bg.jpg");
+}
+
+.photographer-bg-img-url-3 {
+  background-image: url("../img/photographers/sergii_poznanskyi/bg.jpg");
+}
+
+.photographer-bg-img-url-4 {
+  background-image: url("../img/photographers/igor_zholobak/bg.jpg");
+}
+
+.painters-card:hover {
+  cursor: pointer;
+}
+
+.painters-card:hover .painter-bg-img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.painters-card:hover .painter-bg {
+  opacity: 0.7;
+}
+
+.painters-card:hover .painter-avatar-wrapper {
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+
+.painters-card:hover .painter-portfolio {
+  margin-top: -10px;
+  opacity: 1;
+}
+
+.painter-avatar-wrapper {
+  margin: -220px auto 0;
+  position: relative;
+  z-index: 3;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.painter-name {
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.painter-name-ua {
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+.painter-portfolio {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-size: 14px;
+  margin: 5px 35px;
+  padding: 8px;
+  margin-top: -55px;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+.painters-all {
+  margin: 15px auto 65px;
+  padding: 0 60px;
+  border: 2px solid #d6d6d6;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.catalogues-header {
+  font-size: 28px;
+  line-height: 1.17;
+  font-weight: 600;
+  text-align: center;
+}
+
+.catalogues-header-en {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+.catalogues {
+  background-color: #efefef;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

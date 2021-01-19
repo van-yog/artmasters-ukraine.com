@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -89,26 +91,157 @@
             <p class="painters">ХУДОЖНИКИ / ARTISTS</p>
             <div class="painters-wrapper">
                 <div class="painters-card">
-                    <img class="painter-bg-img" src="./src/img/oksana_svizhak/sea.jpg" alt="">
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img painter-bg-img-url-1"></div>
                     <div class="painter-avatar-wrapper">
                         <img class="painter-avatar" src="./src/img/oksana_svizhak_avatar.png">
+                        <p class="painter-name">Oksana Svizhak <br> <span class="painter-name-ua">Оксана Свіжак</span></p>                        
                     </div>
-                    <p class="painter-name">Oksana Svizhak <br> <span class="painter-name-ua">Оксана Свіжак</span></p>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>
+
+                    
                 </div>
                 <div class="painters-card">
-                    <img class="painter-avatar">
-                    <p class="painter-name">Oksana Svizhak <br> <span class="painter-name-ua">Оксана Свіжак</span></p>
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img painter-bg-img-url-2"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/marian_luniv_avatar.png">
+                        <p class="painter-name">Marian Luniv <br> <span class="painter-name-ua">Мар'ян Лунів</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
                 </div>
                 <div class="painters-card">
-                    <img class="painter-avatar">
-                    <p class="painter-name">Oksana Svizhak <br> <span class="painter-name-ua">Оксана Свіжак</span></p>
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img painter-bg-img-url-3"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/sviatoslav_bazyuk_avatar.png" >
+                        <p class="painter-name">Sviatoslav Bazyuk <br> <span class="painter-name-ua">Святослав Базюк</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
                 </div>
                 <div class="painters-card">
-                    <img class="painter-avatar">
-                    <p class="painter-name">Oksana Svizhak <br> <span class="painter-name-ua">Оксана Свіжак</span></p>
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img painter-bg-img-url-4"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/kateryna_pyatakova_avatar.png">
+                        <p class="painter-name">Kateryna Pyatakova <br> <span class="painter-name-ua">Катерина Пятакова</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
                 </div>
             </div>
+            <a>
+                <p class="painters-all">Всі художники / All artists</p>
+            </a>
+            <p class="painters">ФОТОГРАФИ / PHOTOGRAPHERS</p>
+            <div class="painters-wrapper">
+                <div class="painters-card">
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img photographer-bg-img-url-1"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/mariya_andriichu_avatar.png">
+                        <p class="painter-name">Mariya Andriichuk <br> <span class="painter-name-ua">Марія Андрійчук</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>
+
+                    
+                </div>
+
+                <div class="painters-card">
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img photographer-bg-img-url-2"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/yuriy_zilinskiy_avatar.png">
+                        <p class="painter-name">Yuriy Zilinskiy <br> <span class="painter-name-ua">Юрій Зілінський</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
+                </div>
+
+                <a href="#">
+                    <div class="painters-card">
+                        <div class="painter-bg"></div>
+                        <div class="painter-bg-img photographer-bg-img-url-3"></div>
+                        <div class="painter-avatar-wrapper">
+                            <img class="painter-avatar" src="./src/img/sergii_poznanskyi_avatar.jpg" >
+                            <p class="painter-name">Sergii Poznanskyi<br> <span class="painter-name-ua">Сергій Познанський</span></p>                        
+                        </div>
+                        <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
+                    </div>
+                </a>
+
+                <div class="painters-card">
+                    <div class="painter-bg"></div>
+                    <div class="painter-bg-img photographer-bg-img-url-4"></div>
+                    <div class="painter-avatar-wrapper">
+                        <img class="painter-avatar" src="./src/img/igor_zholobak_avatar.png">
+                        <p class="painter-name">Igor Zholobak <br> <span class="painter-name-ua">Ігор Жолобак</span></p>                        
+                    </div>
+                    <p class="painter-portfolio">Портфоліо / Portfolio</p>                    
+                </div>
+            </div>
+            <a>
+                <p class="painters-all">Всі художники / All artists</p>
+            </a>
+        </section>
+
+        <section class="catalogues-wrapper">   
+            <header>
+                <h2 class="catalogues-header">Наші каталоги <br> 
+                    <span class="catalogues-header-en">Our catalogues</span>
+                </h2>
+            </header>
+
+            <div class="catalogues"> 
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="catalogues-slid-1">
+                            <img src="./src/img/Artists/kateryna_pyatak/bg.jpg" width="260" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogues-slid-1">
+                            <img src="./src/img/Artists/kateryna_pyatak/bg.jpg" width="260" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogues-slid-1">
+                            <img src="./src/img/Artists/kateryna_pyatak/bg.jpg" width="260" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
         </section>
     </main>
+
+      <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
