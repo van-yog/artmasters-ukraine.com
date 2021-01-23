@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна</title>
-    
+    <link rel="shortcut icon" href="./src/img/logo_favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -13,54 +13,58 @@
 </head>
 
 <body>
+
+    <button type="button" id="mobile-menu" class="mobile__btn">
+        <span class="mobile__icon"></span>
+    </button>
     <div class="menu">
         <section class="logo-wrapper">
             <div class="logo">
                 <a href="/index.html">
-                    <img class="logo-img" src="./src/img/logo.png" alt="logo art masters">
+                    <img class="logo__img" src="./src/img/logo.png" alt="logo art masters">
                 </a>
-                <hr class="logo-underline">
+                <hr class="logo__underline">
             </div>
         </section>
     
         <section class="nav-wrapper">
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <p class="nav-text">ПРО НАС</p>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link">
+                            <p class="nav__text">ПРО НАС</p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">
+                    <li class="nav__item">
+                        <a class="nav__link ">
                             <div class="submenu" >
-                                <p class="nav-text">Учасники проєкту <span class="arrow-down"></span> </p>
-                                <div class="submenu-dnone"> 
+                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
+                                <div class="submenu__dnone"> 
                                     <div class="arrow-up">
 
                                     </div>
-                                    <div class="sumbenu-bg">
-                                        <a class="submenu-link" href="#">Художники</a>
-                                        <a class="submenu-link" href="#">Фотографи</a>
+                                    <div class="sumbenu__bg">
+                                        <a class="submenu__link" href="#">Художники</a>
+                                        <a class="submenu__link" href="#">Фотографи</a>
                                     </div>
 
                                 </div>
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <p class="nav-text">НАШІ КАТАЛОГИ</p>
+                    <li class="nav__item">
+                        <a class="nav__link">
+                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <p class="nav-text">АРТПРОЄКТИ</p>
+                    <li class="nav__item">
+                        <a class="nav__link">
+                            <p class="nav__text">АРТПРОЄКТИ</p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <p class="nav-text">Зворотній зв'язок</p>
+                    <li class="nav__item">
+                        <a class="nav__link">
+                            <p class="nav__text">Зворотній зв'язок</p>
                         </a>
                     </li>
                 </ul>
@@ -69,19 +73,17 @@
     </div>
 
     <section class="header-wrapper">
-        <div>
             <div class="first-img-wrapper">
                 <img class="first-img" src="./src/img/art_masters_bg.jpg" alt="art master photo">
             </div>
             <header class="header">
-                <p class="header-top-text">ПЛАТФОРМА РОЗВИТКУ СУЧАСНОГО МИСТЕЦВА <br>
+                <p class="header__top">ПЛАТФОРМА РОЗВИТКУ СУЧАСНОГО МИСТЕЦВА <br>
                     THE PLATFORM OF THE MODERN ART DEVELOPMENT</p>
-                <h1 class="header-main">
+                <h1 class="header__main">
                     ARTMASTERS of Ukraine / АРТМАЙСТРИ України
                 </h1>
-                <p class="header-bottom-text">Портфоліо сучасних українських митців / Portfolios of the modern Ukrainian artists</p>
+                <p class="header__bottom">Портфоліо сучасних українських митців / Portfolios of the modern Ukrainian artists</p>
             </header>
-        </div>
     </section>
 
     <main>
@@ -398,5 +400,7 @@
       },
     });
   </script>
+
+  <script src="./src/js/main.js"></script>
 </body>
 </html>
