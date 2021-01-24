@@ -299,22 +299,54 @@ body > * {
   transition: 0.3s all ease-in-out;
 }
 
-.painter__bg-img-url-1 {
-  background-image: url("../img/artists/oksana_svizhak/sea.jpg");
+.painter__oksana_svizhak {
+  background-image: url("../img/artists/oksana_svizhak/bg.jpg");
 }
 
 .painter__bg-img-url-2 {
   background-image: url("../img/artists/marian_luniv/bg.jpg");
 }
 
-.painter__bg-img-url-3 {
+.painter__sviatoslav_bazyuk {
   background-image: url("../img/artists/sviatoslav_bazyuk/bg.jpg");
 }
 
-.painter__bg-img-url-4 {
+.painter__kateryna_pyatakova {
   background-image: url("../img/artists/kateryna_pyatak/bg.jpg");
 }
-
+.painter__oleksii_glazunov {
+  background-image: url("../img/artists/oleksii_glazunov/bg.jpg");
+}
+.painter__andrii_zhukow {
+  background-image: url("../img/artists/andrii_zhukow/bg.jpg");
+}
+.painter__sergii_ushanov {
+  background-image: url("../img/artists/sergii_ushanov/bg.jpg");
+}
+.painter__svitlana_ushanova {
+  background-image: url("../img/artists/svitlana_ushanova/bg.jpg");
+}
+.painter__kostyantyn_lyzogub {
+  background-image: url("../img/artists/kostyantyn_lyzogub/bg.jpg");
+}
+.painter__viktoriia_adkozalova {
+  background-image: url("../img/artists/viktoriia_adkozalova/bg.jpg");
+}
+.painter__vartan_markariyan {
+  background-image: url("../img/artists/vartan_markariyan/bg.jpg");
+}
+.painter__maksym_rybalko {
+  background-image: url("../img/artists/maksym_rybalko/bg.jpg");
+}
+.painter__oleksii_gnievyshev {
+  background-image: url("../img/artists/oleksii_gnievyshev/bg.jpg");
+}
+.painter__sergii_kushanov {
+  background-image: url("../img/artists/sergii_kushanov/bg.jpg");
+}
+.painter__nataliya_zinovchuk {
+  background-image: url("../img/artists/nataliya_zinovchuk/bg.jpg");
+}
 .photographer-bg-img-url-1 {
   background-image: url("../img/photographers/mariya_andriichuk/bg.jpg");
 }
@@ -821,6 +853,20 @@ body > * {
 
 .show {
   display: block !important;
+}
+
+.artists__header {
+  margin-top: 140px;
+  font-size: 42px;
+  text-align: center;
+}
+.artists__header-en {
+  font-weight: 24px;
+  text-align: center;
+}
+
+.artists__line {
+  padding: 60px 60px;
 }
 
 @media (max-width: 1250px) {
