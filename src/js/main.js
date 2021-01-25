@@ -18,3 +18,17 @@ submenu.addEventListener("touchstart", () => {
   let submenu = document.querySelector(".submenu__dnone");
   submenu.classList.toggle("show");
 });
+
+let artist = document.querySelectorAll(".about__header");
+
+artist.forEach((elem) => {
+  elem.addEventListener("click", (ev) => {
+    let sibling = ev.target.nextElementSibling;
+    sibling.classList.toggle("show");
+    let child = sibling.querySelector(".animation");
+    setTimeout(() => child.classList.toggle("animation-height"), 50);
+    let close = ev.target.querySelector(".about__header_icon");
+    console.log(close);
+    close.classList.toggle("about__header_icon_close");
+  });
+});

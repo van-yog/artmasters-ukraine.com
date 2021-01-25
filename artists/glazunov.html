@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./src/img/logo_favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/swiper.min.css">
+    <script src="../src/js/swiper.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <title>Всі художники</title>
+    <style>
+    .swiper-container {
+        background-color: #272727;
+        width: 100%;
+        height: 450px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      width: 60%;
+    }
+    .swiper-slide:nth-child(2n) {
+      width: 40%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      width: 20%;
+    }
+    </style>
 </head>
 <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
@@ -15,8 +54,8 @@
     <div class="menu">
         <section class="logo-wrapper">
             <div class="logo">
-                <a href="/index.html">
-                    <img class="logo__img" src="./src/img/logo.png" alt="logo art masters">
+                <a href="../index.html">
+                    <img class="logo__img" src="../src/img/logo.png" alt="logo art masters">
                 </a>
                 <hr class="logo__underline">
             </div>
@@ -27,7 +66,39 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="../index.html">
-                            <p class="nav__text">НА ГОЛОВНУ</p>
+                            <p class="nav__text">ПРО НАС</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link ">
+                            <div class="submenu" >
+                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
+                                <div class="submenu__dnone"> 
+                                    <div class="arrow-up">
+
+                                    </div>
+                                    <div class="sumbenu__bg">
+                                        <a class="submenu__link" href="../artists.html">Художники</a>
+                                        <a class="submenu__link" href="#">Фотографи</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#catalogues">
+                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#projects">
+                            <p class="nav__text">АРТПРОЄКТИ</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#contact">
+                            <p class="nav__text">Зворотній зв'язок</p>
                         </a>
                     </li>
                 </ul>
@@ -35,10 +106,102 @@
         </section>
     </div>
 
-    <header >
-        <h1 class="artists__header">Oleksii Glazunov</h1>
-        <h2 class="artists__header-en">Participants</h2>
+    <header class="artist__header-wrapper">
+        <div class="artist__avatar-wrapper">
+            <img class="artist__avatar" src="../src/img/artists/oleksii_glazunov/oleksii_glazunov.png" alt="Олексій Глазунов">
+        </div>
+        <h1 class="artist__header">Alexey Glazunov / Олексій Глазунов</h1>
+        <p class="artist__phone">
+            +38-050-382-70-69 <br>
+            +38-097-312-44-69
+        </p>
+        <span class="artist__quote">“</span>
+        <blockquote class="artist__blockquote">
+            "МОИ КАРТИНЫ – ОТРАЖЕНИЕ МОЕГО МИРОВОСПРИЯТИЯ, ОНИ О ТОМ, ЧТО МНЕ ИНТЕРЕСНО, ЧТО МЕНЯ ВДОХНОВЛЯЕТ. ПОЭТОМУ Я НЕ ОТДАЮ ПРЕДПОЧТЕНИЕ ОДНОМУ ЖАНРУ. ВСЕ, ЧТО ЗАСТАВЛЯЕТ ЗАДУМАТЬСЯ, ВОСХИТИТЬСЯ, МОЖЕТ СТАТЬ ТЕМОЙ МОЕЙ КАРТИНЫ"
+        </blockquote>
     </header>
+    <main>
+        <section class="artist artist__container">
+            <div class="artist-wrapper">
+                <hr class="art__hr">
+                <p class="artist__font">«НА МОЙ ВЗГЛЯД, ИСКУССТВО ЖИВОПИСИ ВСЕГДА НЕСЛО В СЕБЕ НЕСКОЛЬКО ЗАДАЧ: ЭСТЕТИЧЕСКУЮ (ФОРМИРОВАНИЕ ВКУСА, ИЗОБРАЖЕНИЕ КРАСОТЫ И ГАРМОНИИ), ОБРАЗОВАТЕЛЬНУЮ (ЗАСТАВИТЬ ДУМАТЬ, СОПЕРЕЖИВАТЬ, ОБЪЕДИНИТЬ ЛЮДЕЙ В ИХ МИРОПОНИМАНИИ), А ТАКЖЕ ФУНКЦИЮ ДЕКОРА. ДЛЯ МЕНЯ, КАК ХУДОЖНИКА, ВАЖНО КРАСИВО ПОДАТЬ САМУ ИДЕЮ, ЧТОБЫ КАРТИНА НЕ ПЕРЕШЛА ИСКЛЮЧИТЕЛЬНО В РОЛЬ ДИЗАЙНА. ПОТОМУ ЧТО ВСЮ ЖИЗНЬ ИСКУССТВО ТРОГАЛО ДУШУ ЧЕЛОВЕКА. Я НЕ ЛЮБЛЮ БЕЗЛИКОСТЬ, ПУСТОТУ, НЕ НЕСУЩУЮ СОПЕРЕЖИВАНИЯ»</p>   
+            </div>
+            <div>
+                <p class="artist__text">Алексей пишет картины с трех лет. Еще во время обучения в художественной школе Алексей твердо решил стать художником, и уже на протяжении 15 лет профессионально занимается искусством. Алексей работает как художник-живописец и художник-монументалист. <br>
+                    Алексей принимал участие в росписи Зверинецкого монастыря в Киеве, храма «Живоносный источник» в Одессе, Новоиерусалимского монастыря в г. Истре, исполнял роль главного художника и разработчика монументально-декоративных композиций в храме Вознесение Христова в Одесской области. С 2014 года Алексей – член монументальной секции Национального Союза Художников Украины.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-wrapper">  
+            <div class="gallery"> 
+                 <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" >
+                          <img style="height: 100%;"  src="../src/img/artists/oleksii_glazunov/1_13.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../src/img/artists/oleksii_glazunov/1_13.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+         </section>
+
+         <section class="arist__about">
+            <div class="about-wrapper">
+               <p class="about__header"> Персональні виставки <span class="about__header_icon"></span></p>
+                <div class="about__header-dnone">
+                    2019 – «Аркан. Єднання», Арт-ресторан BARVY, Київ, Україна<br>2018 – «The Pieces of Peace», Creative Space, NATO Information and Documentation Centre, Київ, Україна<br>2018 – «Ukraine: The Pieces of Peace», Fulbright Art Space, Київа, Україна<br>2017 – «Місто і Музика», Арт-фойє, Київський театр оперети, Київ, Україна<br>2017 – «Венеційські канікули», Виставкова зала Інституту Міжнародної Освіти, Київ, Україна<br>2016 – «Про рідне», Верховна Рада України, Київ, Україна<br>2016 – «Віддзеркалення», Інформаційно-культурний центр Посольства України в Греції, Афіни, Греція<br>2016 – «Три чверті Неба», Музей Лесі Українки, Київ, Україна<br>2014 – «Під високим небом: Схід-Захід», Київський національний лінгвістичний університет, Київ, Україна<br>2014 – «Під високим небом», Виставкова зала Програми імені Фулбрайта в Україні, Київ, Україна<br>2014 – «Я...І ДОВКРУГИ: ще-не-висловлене...», «Калита Арт Клуб», Київ, Україна<br>2012 – «Поза рамками», Виставкова зала Програми імені Фулбрайта в Україні, Київ, Україна
+                    <div class="animation"></div>
+                </div>
+            </div>
+            <div class="about-wrapper">
+                <p class="about__header"> Колективні виставки <span class="about__header_icon"></span></p>
+                 <div class="about__header-dnone">
+                    В 2015 году участвовал в коллективном проекте «День 8». Картина экспонировалась в Национальном музее истории Украины, г. Киев.<br>В &shy;&shy;&shy;&shy;&shy;2017 году принимал участие в групповой международной выставке живописи «Источник творчества» в музее Ли Кэжань, Пекин, Китай.
+                    <div class="animation"></div>
+                 </div>
+             </div>
+             <div class="about-wrapper">
+                <p class="about__header"> Конкурси / Нагороди <span class="about__header_icon"></span></p>
+                 <div class="about__header-dnone">
+                    В 2011 году присуждено 1-е место за лучшую тематическую работу на выставке МАРТС-2011 «Пикник на обочине», картина называлась «Встреча двух миров» (Киев). <br><br> В 2014 году президентом Государства Палестина Махмудом Аббасом награжден золотой медалью за участие в международном проекте «Сердце мира», Вифлеем, Палестина (в соавторстве с Джамалем Бадван, Даниилом Грин, Валерием Голейко, Дарьей Марченко). Монументальная картина «Сердце мира» экспонировалась в Вифлееме и Киеве. <br><br> В 2016 году награжден митрополитом Одесским и Измаильским Агафангелом за культурный вклад в оформление храма Вознесения Господня, село Нерубайское. <br><br> В 2017 году присуждено 1-е место за картину «Время» (номинация жанровая картина), а также 1 место за картину «Греческая оливка» (номинация пейзаж) в рамках XV Международной выставки-конкурса "Украинская неделя искусств"/Ukrainian Art Week.
+                    <div class="animation"></div>
+                 </div>
+             </div>
+         </section>
+    </main>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 40,
+      speed: 700,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
     
+    <script src="../src/js/main.js"></script>
 </body>
 </html>

@@ -8,8 +8,8 @@ body {
   box-sizing: border-box;
 }
 
-body > * {
-  border: 1px solid red;
+a {
+  text-decoration: none;
 }
 
 .mobile__btn {
@@ -17,6 +17,7 @@ body > * {
 }
 .menu {
   position: fixed;
+  top: 0;
   z-index: 99;
   background-color: #fafafa;
   width: 100%;
@@ -239,8 +240,7 @@ body > * {
 }
 
 .painters-wrapper {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 30px;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -303,7 +303,7 @@ body > * {
   background-image: url("../img/artists/oksana_svizhak/bg.jpg");
 }
 
-.painter__bg-img-url-2 {
+.painter__marian_luniv {
   background-image: url("../img/artists/marian_luniv/bg.jpg");
 }
 
@@ -347,6 +347,46 @@ body > * {
 .painter__nataliya_zinovchuk {
   background-image: url("../img/artists/nataliya_zinovchuk/bg.jpg");
 }
+.painter__nataliya_mkrtchyan {
+  background-image: url("../img/artists/nataliya_mkrtchyan/bg.jpg");
+}
+.painter__asror_muradov {
+  background-image: url("../img/artists/asror_muradov/bg.jpg");
+}
+.painter__olya_rondiak {
+  background-image: url("../img/artists/olya_rondiak/bg.jpg");
+}
+.painter__mariko_gelman {
+  background-image: url("../img/artists/mariko_gelman/bg.jpg");
+}
+.painter__mykola_zhuravel {
+  background-image: url("../img/artists/mykola_zhuravel/bg.jpg");
+}
+.painter__yaroslav_valiev {
+  background-image: url("../img/artists/yaroslav_valiev/bg.jpg");
+}
+.painter__mariana_blinova {
+  background-image: url("../img/artists/mariana_blinova/bg.jpg");
+}
+.painter__anastasiya_kharchenko {
+  background-image: url("../img/artists/anastasiya_kharchenko/bg.jpeg");
+}
+.painter__viktoriia_kartashova {
+  background-image: url("../img/artists/viktoriia_kartashova/bg.jpg");
+}
+.painter__oleg_yurov {
+  background-image: url("../img/artists/oleg_yurov/bg.jpg");
+}
+.painter__anna_kostrytska {
+  background-image: url("../img/artists/anna_kostrytska/bg.jpg");
+}
+.painter__nadiia_gorbatova {
+  background-image: url("../img/artists/nadiia_gorbatova/bg.jpg");
+}
+.painter__olga_yatsenko {
+  background-image: url("../img/artists/olga_yatsenko/bg.jpg");
+}
+
 .photographer-bg-img-url-1 {
   background-image: url("../img/photographers/mariya_andriichuk/bg.jpg");
 }
@@ -869,7 +909,173 @@ body > * {
   padding: 60px 60px;
 }
 
+.artist__header-wrapper {
+  width: 760px;
+  text-align: center;
+  margin: 140px auto 50px auto;
+}
+
+.artist__avatar-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.artist__avatar {
+  width: 100%;
+}
+
+.artist__header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.artist__phone {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.artist__blockquote {
+  margin: 0;
+  margin-top: -20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.35;
+}
+.artist__quote {
+  font-family: Georgia;
+  font-size: 70px;
+}
+.artist-wrapper {
+  float: right;
+  width: 400px;
+  padding: 0 20px;
+  margin-top: -16px;
+}
+.artist__font {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.artist__text {
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.artist__container {
+  width: 860px;
+  margin: 0px 50px 0px 250px;
+  font-weight: 300;
+}
+
+.gallery-wrapper {
+  margin-bottom: 30px;
+}
+
+.arist__about {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+  transition: 0.3s all ease-in-out;
+  border-top: 1px solid #eee;
+}
+
+.about-wrapper:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.about__header {
+  margin: 0;
+  position: relative;
+  font-family: "Arial";
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 600;
+  padding: 27px 0;
+  cursor: pointer;
+}
+
+.about__header-dnone {
+  display: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto";
+  margin-bottom: 40px;
+}
+.animation {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+.animation-height {
+  height: 0%;
+}
+.about__header_icon {
+  position: absolute;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: 0.4s all ease-in-out;
+}
+
+.about__header_icon::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 1px;
+  background-color: black;
+  transform: translate(5px, 16px);
+  transition: 0.3s all ease-in-out;
+}
+
+.about__header_icon::after {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 1px;
+  background-color: black;
+  transform: translate(5px, 14px) rotate(90deg);
+  transition: 0.3s all ease-in-out;
+}
+
+.about__header_icon_close::after {
+  transform: translate(5px, 15px) rotate(135deg);
+}
+.about__header_icon_close::before {
+  transform: translate(5px, 16px) rotate(45deg);
+}
+
+.about__header:hover .about__header_icon {
+  background-color: rgba(202, 202, 202, 0.555);
+}
+
+.change-height {
+  height: 100%;
+}
+
 @media (max-width: 1250px) {
+  .artist__container {
+    width: 100%;
+    padding: 0 120px;
+    margin: 0;
+  }
+  .artist-wrapper {
+    float: unset;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
   .first-img {
     margin-top: unset;
     width: 120%;
@@ -881,6 +1087,9 @@ body > * {
   .ifnotyou {
     width: 480px;
     height: 330px;
+  }
+  .painters-wrapper {
+    padding: 15px 20px;
   }
 }
 
@@ -976,6 +1185,9 @@ body > * {
     background-color: #fff;
     transform: rotate(-45deg) translate(-1px, -1px);
   }
+  .artists__header {
+    margin-top: 30px;
+  }
   .first-img {
     width: 134%;
   }
@@ -1007,6 +1219,15 @@ body > * {
   }
   .form {
     width: 60%;
+  }
+  .artist__header-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 25px;
+  }
+  .arist__about {
+    width: 100%;
+    padding: 30px 20px 50px 20px;
   }
 }
 
@@ -1049,6 +1270,12 @@ body > * {
   }
   .art__text {
     margin-right: unset;
+  }
+  .artist__blockquote {
+    padding: 0 20px;
+  }
+  .artist__container {
+    padding: 0 20px;
   }
 }
 
@@ -1167,5 +1394,15 @@ body > * {
   }
   .form__text {
     font-size: 16px;
+  }
+  .artist__header {
+    font-size: 20px;
+  }
+  .artist__font {
+    line-height: 1.35;
+  }
+  .artist__text {
+    font-size: 18px;
+    line-height: 1.45;
   }
 }
