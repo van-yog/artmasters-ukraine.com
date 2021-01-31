@@ -32,3 +32,14 @@ artist.forEach((elem) => {
     close.classList.toggle("about__header_icon_close");
   });
 });
+
+let a = document.querySelectorAll(".nav__link ");
+
+a.forEach((elem) => {
+  elem.addEventListener("click", (ev) => {
+    console.log("click po link");
+    let mobileMenu = document.querySelector(".menu");
+    console.log(mobileMenu);
+    mobileMenu.classList.remove("show");
+  });
+});

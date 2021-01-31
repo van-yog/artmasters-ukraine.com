@@ -14,14 +14,19 @@ a {
 
 .mobile__btn {
   display: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
 .menu {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 99;
   background-color: #fafafa;
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.menu__artist {
+  position: static;
 }
 
 .logo {
@@ -125,7 +130,7 @@ a {
 }
 
 .first-img-wrapper {
-  height: 100vh;
+  height: 84vh;
   overflow: hidden;
 }
 
@@ -299,92 +304,92 @@ a {
   transition: 0.3s all ease-in-out;
 }
 
-.painter__oksana_svizhak {
-  background-image: url("../img/artists/oksana_svizhak/bg.jpg");
+.painter__svizhak_oksana {
+  background-image: url("../img/artists/svizhak_oksana/bg.jpg");
 }
 
-.painter__marian_luniv {
-  background-image: url("../img/artists/marian_luniv/bg.jpg");
+.painter__luniv_marian {
+  background-image: url("../img/artists/luniv_marian/bg.jpg");
 }
 
-.painter__sviatoslav_bazyuk {
-  background-image: url("../img/artists/sviatoslav_bazyuk/bg.jpg");
+.painter__bazyuk_sviatoslav {
+  background-image: url("../img/artists/bazyuk_sviatoslav/bg.jpg");
 }
 
-.painter__kateryna_pyatakova {
-  background-image: url("../img/artists/kateryna_pyatak/bg.jpg");
+.painter__pyatakova_kateryna {
+  background-image: url("../img/artists/pyatakova_kateryna/bg.jpg");
 }
-.painter__oleksii_glazunov {
-  background-image: url("../img/artists/oleksii_glazunov/bg.jpg");
+.painter__glazunov_oleksii {
+  background-image: url("../img/artists/glazunov_oleksii/bg.jpg");
 }
-.painter__andrii_zhukow {
-  background-image: url("../img/artists/andrii_zhukow/bg.jpg");
+.painter__zhukow_andrii {
+  background-image: url("../img/artists/zhukow_andrii/bg.jpg");
 }
-.painter__sergii_ushanov {
-  background-image: url("../img/artists/sergii_ushanov/bg.jpg");
+.painter__ushanov_sergii {
+  background-image: url("../img/artists/ushanov_sergii/bg.jpg");
 }
-.painter__svitlana_ushanova {
-  background-image: url("../img/artists/svitlana_ushanova/bg.jpg");
+.painter__ushanova_svitlana {
+  background-image: url("../img/artists/ushanova_svitlana/bg.jpg");
 }
-.painter__kostyantyn_lyzogub {
-  background-image: url("../img/artists/kostyantyn_lyzogub/bg.jpg");
+.painter__lyzogub_kostyantyn {
+  background-image: url("../img/artists/lyzogub_kostyantyn/bg.jpg");
 }
-.painter__viktoriia_adkozalova {
-  background-image: url("../img/artists/viktoriia_adkozalova/bg.jpg");
+.painter__adkozalova_viktoriia {
+  background-image: url("../img/artists/adkozalova_viktoriia/bg.jpg");
 }
-.painter__vartan_markariyan {
-  background-image: url("../img/artists/vartan_markariyan/bg.jpg");
+.painter__markariyan_vartan {
+  background-image: url("../img/artists/markariyan_vartan/bg.jpg");
 }
-.painter__maksym_rybalko {
-  background-image: url("../img/artists/maksym_rybalko/bg.jpg");
+.painter__rybalko_maksym {
+  background-image: url("../img/artists/rybalko_maksym/bg.jpg");
 }
-.painter__oleksii_gnievyshev {
-  background-image: url("../img/artists/oleksii_gnievyshev/bg.jpg");
+.painter__gnievyshev_oleksi {
+  background-image: url("../img/artists/gnievyshev_oleksi/bg.jpg");
 }
-.painter__sergii_kushanov {
-  background-image: url("../img/artists/sergii_kushanov/bg.jpg");
+.painter__kushanov_sergii {
+  background-image: url("../img/artists/kushanov_sergii/bg.jpg");
 }
-.painter__nataliya_zinovchuk {
-  background-image: url("../img/artists/nataliya_zinovchuk/bg.jpg");
+.painter__zinovchuk_nataliya {
+  background-image: url("../img/artists/zinovchuk_nataliya/bg.jpg");
 }
-.painter__nataliya_mkrtchyan {
-  background-image: url("../img/artists/nataliya_mkrtchyan/bg.jpg");
+.painter__mkrtchyan_nataliya {
+  background-image: url("../img/artists/mkrtchyan_nataliya/bg.jpg");
 }
-.painter__asror_muradov {
-  background-image: url("../img/artists/asror_muradov/bg.jpg");
+.painter__muradov_asror {
+  background-image: url("../img/artists/muradov_asror/bg.jpg");
 }
-.painter__olya_rondiak {
-  background-image: url("../img/artists/olya_rondiak/bg.jpg");
+.painter__rondiak_olya {
+  background-image: url("../img/artists/rondiak_olya/bg.jpg");
 }
-.painter__mariko_gelman {
-  background-image: url("../img/artists/mariko_gelman/bg.jpg");
+.painter__gelman_mariko {
+  background-image: url("../img/artists/gelman_mariko/bg.jpg");
 }
-.painter__mykola_zhuravel {
-  background-image: url("../img/artists/mykola_zhuravel/bg.jpg");
+.painter__zhuravel_mykola {
+  background-image: url("../img/artists/zhuravel_mykola/bg.jpg");
 }
-.painter__yaroslav_valiev {
-  background-image: url("../img/artists/yaroslav_valiev/bg.jpg");
+.painter__valiev_yaroslav {
+  background-image: url("../img/artists/valiev_yaroslav/bg.jpg");
 }
-.painter__mariana_blinova {
-  background-image: url("../img/artists/mariana_blinova/bg.jpg");
+.painter__blinova_mariana {
+  background-image: url("../img/artists/blinova_mariana/bg.jpg");
 }
-.painter__anastasiya_kharchenko {
-  background-image: url("../img/artists/anastasiya_kharchenko/bg.jpeg");
+.painter__kharchenko_anastasiya {
+  background-image: url("../img/artists/kharchenko_anastasiya/bg.jpeg");
 }
-.painter__viktoriia_kartashova {
-  background-image: url("../img/artists/viktoriia_kartashova/bg.jpg");
+.painter__kartashova_viktoriia {
+  background-image: url("../img/artists/kartashova_viktoriia/bg.jpg");
 }
-.painter__oleg_yurov {
-  background-image: url("../img/artists/oleg_yurov/bg.jpg");
+.painter__yurov_oleg {
+  background-image: url("../img/artists/yurov_oleg/bg.jpg");
 }
-.painter__anna_kostrytska {
-  background-image: url("../img/artists/anna_kostrytska/bg.jpg");
+.painter__kostrytska_anna {
+  background-image: url("../img/artists/kostrytska_anna/bg.jpg");
 }
-.painter__nadiia_gorbatova {
-  background-image: url("../img/artists/nadiia_gorbatova/bg.jpg");
+.painter__gorbatova_nadiia {
+  background-image: url("../img/artists/gorbatova_nadiia/bg.jpg");
 }
-.painter__olga_yatsenko {
-  background-image: url("../img/artists/olga_yatsenko/bg.jpg");
+.painter__yatsenko_olga {
+  background-image: url("../img/artists/yatsenko_olga/bg.jpg");
 }
 
 .photographer-bg-img-url-1 {
@@ -912,7 +917,7 @@ a {
 .artist__header-wrapper {
   width: 760px;
   text-align: center;
-  margin: 140px auto 50px auto;
+  margin: 30px auto 50px auto;
 }
 
 .artist__avatar-wrapper {
@@ -974,6 +979,19 @@ a {
 
 .gallery-wrapper {
   margin-bottom: 30px;
+  position: relative;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.zhukov-gallery-9 {
+  background-image: url("../img/artists/zhukow_andrii/9_Андрей_Жуков_Toxic_80х110.jpg");
 }
 
 .arist__about {
@@ -1064,6 +1082,29 @@ a {
   height: 100%;
 }
 
+.catalogues__artist-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.catalogues__artist-text {
+  font-weight: 300;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.catalogues__art {
+  padding: 25px 0px;
+  background-color: #efefef;
+}
+
+.catalogues__art .slide {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
 @media (max-width: 1250px) {
   .artist__container {
     width: 100%;
@@ -1077,7 +1118,7 @@ a {
     margin-top: 0;
   }
   .first-img {
-    margin-top: unset;
+    margin-top: -135px;
     width: 120%;
     margin-left: -100px;
   }
@@ -1098,8 +1139,8 @@ a {
     display: none;
     position: static;
   }
-  .logo__img {
-    padding: 30px 0;
+  .logo-wrapper {
+    display: none;
   }
 
   .submenu__dnone {
@@ -1126,23 +1167,30 @@ a {
   }
 
   .mobile__btn {
-    display: block;
-    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
     height: 62px;
     width: 100%;
-    padding: 20px;
+    padding: 8px 20px 4px 20px;
     outline: none;
     border: 0;
-    text-align: right;
     cursor: pointer;
   }
+  .mobile__link-home {
+    height: 100%;
+  }
 
+  .mobile__logo {
+    height: 100%;
+  }
   .mobile__icon {
     display: block;
     margin-left: auto;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     transition: 0.1s all ease-in-out;
   }
 
@@ -1151,7 +1199,7 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     transform: translateY(-10px);
     transition: 0.3s all ease-in-out;
   }
@@ -1160,7 +1208,7 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     transform: translateY(7px);
     transition: 0.3s all ease-in-out;
   }
@@ -1174,16 +1222,16 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
-    transform: rotate(45deg) translate(2px, 2px);
+    background-color: #111;
+    transform: rotate(45deg) translate(-4px, 2px);
   }
   .mobile__icon-open::after {
     content: "";
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
-    transform: rotate(-45deg) translate(-1px, -1px);
+    background-color: #111;
+    transform: rotate(-45deg) translate(1px, -6px);
   }
   .artists__header {
     margin-top: 30px;
@@ -1284,7 +1332,7 @@ a {
     width: unset;
     height: 100%;
     margin-top: unset;
-    margin-left: -257px;
+    margin-left: -181px;
   }
 
   .art__header {

@@ -6,7 +6,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -15,16 +15,23 @@ a {
 
 .mobile__btn {
   display: none;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .menu {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 99;
   background-color: #fafafa;
   width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.menu__artist {
+  position: static;
 }
 
 .logo {
@@ -53,8 +60,8 @@ a {
   display: flex;
   gap: 30px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nav__text {
@@ -90,11 +97,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   left: 20%;
   display: none;
 }
@@ -122,7 +129,7 @@ a {
 .sumbenu__bg {
   background-color: #fafafa;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
   padding: 10px 20px;
 }
 
@@ -140,7 +147,7 @@ a {
 }
 
 .first-img-wrapper {
-  height: 100vh;
+  height: 84vh;
   overflow: hidden;
 }
 
@@ -262,10 +269,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -299,7 +306,13 @@ a {
   position: relative;
   z-index: 2;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.5)), to(rgba(0, 0, 0, 0.4)));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(15, 15, 15, 0.5)),
+    to(rgba(0, 0, 0, 0.4))
+  );
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -316,116 +329,116 @@ a {
   transition: 0.3s all ease-in-out;
 }
 
-.painter__oksana_svizhak {
-  background-image: url("../img/artists/oksana_svizhak/bg.jpg");
+.painter__svizhak_oksana {
+  background-image: url("../img/artists/svizhak_oksana/bg.jpg");
 }
 
-.painter__marian_luniv {
-  background-image: url("../img/artists/marian_luniv/bg.jpg");
+.painter__luniv_marian {
+  background-image: url("../img/artists/luniv_marian/bg.jpg");
 }
 
-.painter__sviatoslav_bazyuk {
-  background-image: url("../img/artists/sviatoslav_bazyuk/bg.jpg");
+.painter__bazyuk_sviatoslav {
+  background-image: url("../img/artists/bazyuk_sviatoslav/bg.jpg");
 }
 
-.painter__kateryna_pyatakova {
-  background-image: url("../img/artists/kateryna_pyatak/bg.jpg");
+.painter__pyatakova_kateryna {
+  background-image: url("../img/artists/pyatakova_kateryna/bg.jpg");
 }
 
-.painter__oleksii_glazunov {
-  background-image: url("../img/artists/oleksii_glazunov/bg.jpg");
+.painter__glazunov_oleksii {
+  background-image: url("../img/artists/glazunov_oleksii/bg.jpg");
 }
 
-.painter__andrii_zhukow {
-  background-image: url("../img/artists/andrii_zhukow/bg.jpg");
+.painter__zhukow_andrii {
+  background-image: url("../img/artists/zhukow_andrii/bg.jpg");
 }
 
-.painter__sergii_ushanov {
-  background-image: url("../img/artists/sergii_ushanov/bg.jpg");
+.painter__ushanov_sergii {
+  background-image: url("../img/artists/ushanov_sergii/bg.jpg");
 }
 
-.painter__svitlana_ushanova {
-  background-image: url("../img/artists/svitlana_ushanova/bg.jpg");
+.painter__ushanova_svitlana {
+  background-image: url("../img/artists/ushanova_svitlana/bg.jpg");
 }
 
-.painter__kostyantyn_lyzogub {
-  background-image: url("../img/artists/kostyantyn_lyzogub/bg.jpg");
+.painter__lyzogub_kostyantyn {
+  background-image: url("../img/artists/lyzogub_kostyantyn/bg.jpg");
 }
 
-.painter__viktoriia_adkozalova {
-  background-image: url("../img/artists/viktoriia_adkozalova/bg.jpg");
+.painter__adkozalova_viktoriia {
+  background-image: url("../img/artists/adkozalova_viktoriia/bg.jpg");
 }
 
-.painter__vartan_markariyan {
-  background-image: url("../img/artists/vartan_markariyan/bg.jpg");
+.painter__markariyan_vartan {
+  background-image: url("../img/artists/markariyan_vartan/bg.jpg");
 }
 
-.painter__maksym_rybalko {
-  background-image: url("../img/artists/maksym_rybalko/bg.jpg");
+.painter__rybalko_maksym {
+  background-image: url("../img/artists/rybalko_maksym/bg.jpg");
 }
 
-.painter__oleksii_gnievyshev {
-  background-image: url("../img/artists/oleksii_gnievyshev/bg.jpg");
+.painter__gnievyshev_oleksi {
+  background-image: url("../img/artists/gnievyshev_oleksi/bg.jpg");
 }
 
-.painter__sergii_kushanov {
-  background-image: url("../img/artists/sergii_kushanov/bg.jpg");
+.painter__kushanov_sergii {
+  background-image: url("../img/artists/kushanov_sergii/bg.jpg");
 }
 
-.painter__nataliya_zinovchuk {
-  background-image: url("../img/artists/nataliya_zinovchuk/bg.jpg");
+.painter__zinovchuk_nataliya {
+  background-image: url("../img/artists/zinovchuk_nataliya/bg.jpg");
 }
 
-.painter__nataliya_mkrtchyan {
-  background-image: url("../img/artists/nataliya_mkrtchyan/bg.jpg");
+.painter__mkrtchyan_nataliya {
+  background-image: url("../img/artists/mkrtchyan_nataliya/bg.jpg");
 }
 
-.painter__asror_muradov {
-  background-image: url("../img/artists/asror_muradov/bg.jpg");
+.painter__muradov_asror {
+  background-image: url("../img/artists/muradov_asror/bg.jpg");
 }
 
-.painter__olya_rondiak {
-  background-image: url("../img/artists/olya_rondiak/bg.jpg");
+.painter__rondiak_olya {
+  background-image: url("../img/artists/rondiak_olya/bg.jpg");
 }
 
-.painter__mariko_gelman {
-  background-image: url("../img/artists/mariko_gelman/bg.jpg");
+.painter__gelman_mariko {
+  background-image: url("../img/artists/gelman_mariko/bg.jpg");
 }
 
-.painter__mykola_zhuravel {
-  background-image: url("../img/artists/mykola_zhuravel/bg.jpg");
+.painter__zhuravel_mykola {
+  background-image: url("../img/artists/zhuravel_mykola/bg.jpg");
 }
 
-.painter__yaroslav_valiev {
-  background-image: url("../img/artists/yaroslav_valiev/bg.jpg");
+.painter__valiev_yaroslav {
+  background-image: url("../img/artists/valiev_yaroslav/bg.jpg");
 }
 
-.painter__mariana_blinova {
-  background-image: url("../img/artists/mariana_blinova/bg.jpg");
+.painter__blinova_mariana {
+  background-image: url("../img/artists/blinova_mariana/bg.jpg");
 }
 
-.painter__anastasiya_kharchenko {
-  background-image: url("../img/artists/anastasiya_kharchenko/bg.jpeg");
+.painter__kharchenko_anastasiya {
+  background-image: url("../img/artists/kharchenko_anastasiya/bg.jpeg");
 }
 
-.painter__viktoriia_kartashova {
-  background-image: url("../img/artists/viktoriia_kartashova/bg.jpg");
+.painter__kartashova_viktoriia {
+  background-image: url("../img/artists/kartashova_viktoriia/bg.jpg");
 }
 
-.painter__oleg_yurov {
-  background-image: url("../img/artists/oleg_yurov/bg.jpg");
+.painter__yurov_oleg {
+  background-image: url("../img/artists/yurov_oleg/bg.jpg");
 }
 
-.painter__anna_kostrytska {
-  background-image: url("../img/artists/anna_kostrytska/bg.jpg");
+.painter__kostrytska_anna {
+  background-image: url("../img/artists/kostrytska_anna/bg.jpg");
 }
 
-.painter__nadiia_gorbatova {
-  background-image: url("../img/artists/nadiia_gorbatova/bg.jpg");
+.painter__gorbatova_nadiia {
+  background-image: url("../img/artists/gorbatova_nadiia/bg.jpg");
 }
 
-.painter__olga_yatsenko {
-  background-image: url("../img/artists/olga_yatsenko/bg.jpg");
+.painter__yatsenko_olga {
+  background-image: url("../img/artists/yatsenko_olga/bg.jpg");
 }
 
 .photographer-bg-img-url-1 {
@@ -450,7 +463,7 @@ a {
 
 .painters__card:hover .painter__bg-img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .painters__card:hover .painter__bg {
@@ -459,7 +472,7 @@ a {
 
 .painters__card:hover .avatar-wrapper {
   -webkit-transform: translateY(-45px);
-          transform: translateY(-45px);
+  transform: translateY(-45px);
 }
 
 .painters__card:hover .painter__portfolio {
@@ -573,7 +586,7 @@ a {
   border-radius: 2px;
   position: absolute;
   -webkit-transform: rotate(45deg) translate(2px, 4px);
-          transform: rotate(45deg) translate(2px, 4px);
+  transform: rotate(45deg) translate(2px, 4px);
 }
 
 .swiper-button-prev::after {
@@ -584,7 +597,7 @@ a {
   background: #fff;
   position: absolute;
   -webkit-transform: rotate(-45deg) translate(2px, -4px);
-          transform: rotate(-45deg) translate(2px, -4px);
+  transform: rotate(-45deg) translate(2px, -4px);
 }
 
 .swiper-button-next::before {
@@ -595,7 +608,7 @@ a {
   border-radius: 2px;
   position: absolute;
   -webkit-transform: rotate(135deg) translate(2px, -4px);
-          transform: rotate(135deg) translate(2px, -4px);
+  transform: rotate(135deg) translate(2px, -4px);
 }
 
 .swiper-button-next::after {
@@ -606,7 +619,7 @@ a {
   background: #fff;
   position: absolute;
   -webkit-transform: rotate(45deg) translate(-2px, -4px);
-          transform: rotate(45deg) translate(-2px, -4px);
+  transform: rotate(45deg) translate(-2px, -4px);
 }
 
 .swiper-button-prev:after,
@@ -720,8 +733,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -735,13 +748,13 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .ifnotyou__img {
@@ -758,7 +771,11 @@ a {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8)
+  );
   -webkit-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
 }
@@ -783,7 +800,7 @@ a {
 
 .ifnotyou:hover .ifnotyou__img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .ifnotyou:hover .ifnotyou__bg {
@@ -820,8 +837,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 25px;
 }
@@ -842,8 +859,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .social__line-center {
@@ -994,7 +1011,7 @@ a {
 .artist__header-wrapper {
   width: 760px;
   text-align: center;
-  margin: 140px auto 50px auto;
+  margin: 30px auto 50px auto;
 }
 
 .artist__avatar-wrapper {
@@ -1059,6 +1076,15 @@ a {
 
 .gallery-wrapper {
   margin-bottom: 30px;
+  position: relative;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .arist__about {
@@ -1127,7 +1153,7 @@ a {
   height: 1px;
   background-color: black;
   -webkit-transform: translate(5px, 16px);
-          transform: translate(5px, 16px);
+  transform: translate(5px, 16px);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -1139,19 +1165,19 @@ a {
   height: 1px;
   background-color: black;
   -webkit-transform: translate(5px, 14px) rotate(90deg);
-          transform: translate(5px, 14px) rotate(90deg);
+  transform: translate(5px, 14px) rotate(90deg);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
 .about__header_icon_close::after {
   -webkit-transform: translate(5px, 15px) rotate(135deg);
-          transform: translate(5px, 15px) rotate(135deg);
+  transform: translate(5px, 15px) rotate(135deg);
 }
 
 .about__header_icon_close::before {
   -webkit-transform: translate(5px, 16px) rotate(45deg);
-          transform: translate(5px, 16px) rotate(45deg);
+  transform: translate(5px, 16px) rotate(45deg);
 }
 
 .about__header:hover .about__header_icon {
@@ -1160,6 +1186,32 @@ a {
 
 .change-height {
   height: 100%;
+}
+
+.catalogues__artist-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.catalogues__artist-text {
+  font-weight: 300;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.catalogues__art {
+  padding: 25px 0px;
+  background-color: #efefef;
+}
+
+.catalogues__art .slide {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 1250px) {
@@ -1175,7 +1227,7 @@ a {
     margin-top: 0;
   }
   .first-img {
-    margin-top: unset;
+    margin-top: -135px;
     width: 120%;
     margin-left: -100px;
   }
@@ -1196,15 +1248,15 @@ a {
     display: none;
     position: static;
   }
-  .logo__img {
-    padding: 30px 0;
+  .logo-wrapper {
+    display: none;
   }
   .submenu__dnone {
     position: static;
   }
   .sumbenu__bg {
     -webkit-box-shadow: unset;
-            box-shadow: unset;
+    box-shadow: unset;
   }
   .submenu__link:last-child {
     padding-bottom: 28px;
@@ -1216,28 +1268,41 @@ a {
   .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     gap: 0;
   }
   .mobile__btn {
-    display: block;
-    background-color: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fafafa;
     height: 62px;
     width: 100%;
-    padding: 20px;
+    padding: 8px 20px 4px 20px;
     outline: none;
     border: 0;
-    text-align: right;
     cursor: pointer;
+  }
+  .mobile__link-home {
+    height: 100%;
+  }
+  .mobile__logo {
+    height: 100%;
   }
   .mobile__icon {
     display: block;
     margin-left: auto;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     -webkit-transition: 0.1s all ease-in-out;
     transition: 0.1s all ease-in-out;
   }
@@ -1246,9 +1311,9 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
@@ -1257,9 +1322,9 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     -webkit-transform: translateY(7px);
-            transform: translateY(7px);
+    transform: translateY(7px);
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
@@ -1271,18 +1336,18 @@ a {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
-    -webkit-transform: rotate(45deg) translate(2px, 2px);
-            transform: rotate(45deg) translate(2px, 2px);
+    background-color: #111;
+    -webkit-transform: rotate(45deg) translate(-4px, 2px);
+    transform: rotate(45deg) translate(-4px, 2px);
   }
   .mobile__icon-open::after {
     content: "";
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
-    -webkit-transform: rotate(-45deg) translate(-1px, -1px);
-            transform: rotate(-45deg) translate(-1px, -1px);
+    background-color: #111;
+    -webkit-transform: rotate(-45deg) translate(1px, -6px);
+    transform: rotate(-45deg) translate(1px, -6px);
   }
   .artists__header {
     margin-top: 30px;
@@ -1307,8 +1372,8 @@ a {
     padding: 0 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .ifnotyou {
     margin: 0 auto;
@@ -1384,7 +1449,7 @@ a {
     width: unset;
     height: 100%;
     margin-top: unset;
-    margin-left: -257px;
+    margin-left: -181px;
   }
   .art__header {
     font-size: 22px;
@@ -1423,7 +1488,7 @@ a {
   }
   .painters__card:hover .avatar-wrapper {
     -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
   }
   .painters__card:hover .painter__portfolio {
     opacity: 1;
@@ -1457,8 +1522,8 @@ a {
   .art-projects {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 20px;
     padding: 0 20px;
   }

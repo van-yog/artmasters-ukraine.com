@@ -4,19 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./src/img/logo_favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>Всі художники</title>
+    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">    
+    <link rel="stylesheet" href="../src/css/swiper.min.css">
+    <link rel="stylesheet" href="../src/css/main.css">
+    <script src="../src/js/swiper.min.js"></script>
+    <title>Андрій Жуков</title>
+    <style>
+    .swiper-container {
+        background-color: #272727;
+        width: 100%;
+        height: 90vh
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      position: relative;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      width: 60%;
+      height: 100%;
+    }
+    @media (max-width: 640px) {
+        .swiper-slide {
+            width: 100%;
+        }
+        .h-100 {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 85%;
+        }
+    }
+    .swiper-slide  a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        text-decoration: none;
+
+    }
+    .swiper-slide p {
+        position: absolute;
+        top:0;
+        text-align: center;
+        color: white;
+        
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border-radius: 50%;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 2px 2px rgb(202, 201, 201);
+    }
+    .swiper-button-next::before,
+    .swiper-button-next::after,
+    .swiper-button-prev::after,
+    .swiper-button-prev::before {
+        background-color: black
+    }
+
+    .swiper-pagination span{
+        background: rgb(226, 226, 226) !important;
+        box-shadow: 0px 0px 1px 1px rgb(77, 76, 76);
+    }
+    </style>
 </head>
 <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
-        <span class="mobile__icon"></span>
-    </button>
-    <div class="menu">
+        <a class="mobile__link-home" href="../index.html">
+             <img class="mobile__logo" src="../src/img/logo.png" alt="logo">
+        </a>
+         <span class="mobile__icon"></span>
+     </button>
+    <div class="menu menu__artist">
         <section class="logo-wrapper">
             <div class="logo">
-                <a href="/index.html">
-                    <img class="logo__img" src="./src/img/logo.png" alt="logo art masters">
+                <a href="../index.html">
+                    <img class="logo__img" src="../src/img/logo.png" alt="logo art masters">
                 </a>
                 <hr class="logo__underline">
             </div>
@@ -27,7 +109,39 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="../index.html">
-                            <p class="nav__text">НА ГОЛОВНУ</p>
+                            <p class="nav__text">ПРО НАС</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link ">
+                            <div class="submenu" >
+                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
+                                <div class="submenu__dnone"> 
+                                    <div class="arrow-up">
+
+                                    </div>
+                                    <div class="sumbenu__bg">
+                                        <a class="submenu__link" href="../artists.html">Художники</a>
+                                        <a class="submenu__link" href="#">Фотографи</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#catalogues">
+                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#projects">
+                            <p class="nav__text">АРТПРОЄКТИ</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html#contact">
+                            <p class="nav__text">Зворотній зв'язок</p>
                         </a>
                     </li>
                 </ul>
@@ -35,10 +149,157 @@
         </section>
     </div>
 
-    <header >
-        <h1 class="artists__header">Oleksii Glazunov</h1>
-        <h2 class="artists__header-en">Participants</h2>
+    <header class="artist__header-wrapper">
+        <div class="artist__avatar-wrapper">
+            <img class="artist__avatar" src="../src/img/artists/zhukow_andrii/zhukow_andrii.png" alt="Олексій Глазунов">
+        </div>
+        <h1 class="artist__header">Andrii Zhukov / Андрій Жуков</h1>
+        <p class="artist__phone">
+            <a href="www.facebook.com/a.zhukov.artist" target="_blank">
+                www.facebook.com/a.zhukov.artist
+            </a><br>
+            <a href="www.artzhukov.wixsite.com/azart" target="_blank">
+                www.artzhukov.wixsite.com/azart
+            </a><br>
+            <a href="www.instagram.com/zhukow.art" target="_blank">
+                www.instagram.com/zhukow.art
+            </a><br>
+        </p>
+        <span class="artist__quote">“</span>
+        <blockquote class="artist__blockquote">
+            "ХУДОЖНИК ДОЛЖЕН БЫТЬ ЧЕСТНЫМ, В ПЕРВУЮ ОЧЕРЕДЬ – С САМИМ СОБОЙ.<br>ОН НЕ ДОЛЖЕН ЗАИГРЫВАТЬ С МИРОМ, ОГЛЯДЫВАТЬСЯ НА КОНЪЮНКТУРУ РЫНКА,<br>СТАРАТЬСЯ БЫТЬ В ТРЕНДЕ, – ТЕ ОБРАЗЫ, ЧТО ОН СОЗДАЁТ, ДОЛЖНЫ БЫТЬ ЧИСТЫМИ,<br>НЕ ИСКАЖЁННЫМИ, ОН ДОЛЖЕН ЗВУЧАТЬ САМ ПО СЕБЕ"<br>
+        </blockquote>
     </header>
+    <main>
+        <section class="artist artist__container">
+            <div class="artist-wrapper">
+                <hr class="art__hr">
+                <p class="artist__font">«ВСЕ МОИ РАБОТЫ ИМЕЮТ ФИЛОСОФСКИЙ ПОДТЕКСТ.<br>С ОДНОЙ СТОРОНЫ, Я ПЫТАЮСЬ ЗАНОВО ВЗГЛЯНУТЬ НА МИФОЛОГИЮ И СИМВОЛИЗМ,<br>С ДРУГОЙ – СМОТРЮ НАМНОГО ШИРЕ И ИЩУ ОТВЕТЫ НА ИЗВЕЧНЫЕ ВОПРОСЫ»</p>   
+            </div>
+            <div>
+                <p class="artist__text">Андрей Жуков – украинский мультихудожник. Кроме станковой живописи, делает работы на металле в авторской технике ржавления, занимается настенной росписью (фреска), декорированием интерьеров (скульптурный рельеф, декоративное оформление с использованием различных современных материалов и технологий), скульптурой, фотоискусством (снимает и на цифру, и на плёнку – в том числе на самодельные пинхол-фотокамеры) и digital art.<br>Андрей родился в Киеве. Художественное образование получил в Издательско-полиграфическом институте НТУУ «КПИ» имени И. Сикорского (кафедра графики), до этого учился на специальности «Изобразительное искусство» в НПУ им. М. П. Драгоманова. В юношестве брал частные уроки живописи и рисунка. <br> Андрей пишет картины более 20-ти лет, принимает активное участие в выставках, арт-проектах. Его работы находятся в частных коллекциях Украины, Израиля, США.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-wrapper">  
+            <div class="gallery"> 
+                 <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="../src/img/artists/glazunov_oleksii/v_1.jpg" target="_blank">
+                            <img class="h-100" src="../src/img/artists/zhukow_andrii/1_Андрей_Жуков_Вороны_80х110.jpg" alt="">              
+                        </a>
+                        <p>Картина</p>
+                      </div>
+                      <div class="swiper-slide">
+                          <a  href="../src/img/artists/zhukow_andrii/2_Андрей_Жуков_Петух_75х105.jpg">
+                            <img class="h-100" src="../src/img/artists/zhukow_andrii/2_Андрей_Жуков_Петух_75х105.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href="../src/img/artists/zhukow_andrii/3_Андрей_Жуков_Омега_80х120.jpg">
+                            <img class="h-100" src="../src/img/artists/zhukow_andrii/3_Андрей_Жуков_Омега_80х120.jpg" alt="">
+                          </a>
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/zhukow_andrii/4_Андрей_Жуков_Возрождение_Медузы_75х105.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_4.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_6.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_8.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_9.jpg" alt="">
+                      </div>
+                      </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+         </section>
+
+         <section class="arist__about">
+            <div class="about-wrapper">
+               <p class="about__header"> Персональні виставки <span class="about__header_icon"></span></p>
+                <div class="about__header-dnone">
+                   
+                    <div class="animation"></div>
+                </div>
+            </div>
+            <div class="about-wrapper">
+                <p class="about__header"> Колективні виставки <span class="about__header_icon"></span></p>
+                 <div class="about__header-dnone">
+                    2017 – «II Всеукраинская выставка-конкурс произведений визуального искусства», Национальная академия искусств Украины, Киев, Украина <br>
+                    2017 – «Про головне», Мистецький центр «Локація», Киев, Украина <br>
+                    2018 – «UNDEPRESSION», Культурно-медийное пространство «Трансформер», Киев, Украина <br>
+                    2018 – Биеннале «Украинская художественная фотография», Национальный музей «Киевская картинная галерея», Киев, Украина
+                    <div class="animation"></div>
+                 </div>
+             </div>
+             <div class="about-wrapper">
+                <p class="about__header"> Конкурси / Нагороди <span class="about__header_icon"></span></p>
+                 <div class="about__header-dnone">
+                   
+                    <div class="animation"></div>
+                 </div>
+             </div>
+         </section>
+
+         <section class="catalogues__artist">
+             <div class="catalogues__artist-header">
+                Випуски каталогів / Catalogues' issues
+             </div>
+             <div class="catalogues__artist-text">
+                за участі Мар'яна Луніва / with the participation of Marian Luniv
+             </div>
+             <div class="catalogues__art">
+                <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_v" target="_blank">
+                    <div class="slide__img-hover slide__bg-2">
+                        <img class="slide__img" style="margin-top: -25px;" src="../src/img/catalogue/catalogue_2.jpg"  alt="catallogue second">
+                    </div>
+                    
+                    <h3 class="slide__header">Catalogue #2</h3>
+                    <p class="slide__text">Каталог</p>
+                    <p class="slide__link">Читати онлайн / Read online</p>
+                </a>
+             </div>
+         </section>
+    </main>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 40,
+      speed: 700,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
     
+    <script src="../src/js/main.js"></script>
 </body>
 </html>

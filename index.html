@@ -15,6 +15,7 @@
 <body>
 
     <button type="button" id="mobile-menu" class="mobile__btn">
+        <img class="mobile__logo" src="./src/img/logo.png" alt="logo">
         <span class="mobile__icon"></span>
     </button>
     <div class="menu">
@@ -31,7 +32,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link">
+                        <a href="/index.html#about" class="nav__link">
                             <p class="nav__text">ПРО НАС</p>
                         </a>
                     </li>
@@ -53,17 +54,17 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">
+                        <a class="nav__link" href="/index.html#catalogues">
                             <p class="nav__text">НАШІ КАТАЛОГИ</p>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">
+                        <a class="nav__link" href="/index.html#artprojects">
                             <p class="nav__text">АРТПРОЄКТИ</p>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">
+                        <a class="nav__link" href="/index.html#contact">
                             <p class="nav__text">Зворотній зв'язок</p>
                         </a>
                     </li>
@@ -87,7 +88,7 @@
     </section>
 
     <main>
-        <section class="art">
+        <section id="about" class="art">
             <div class="art__header-wrapper">
                 <hr class="art__hr">
                 <p class="art__header">Про Україну - мовою мистецтва / <span class="art__header-en">About Ukraine in the language of Art</span></p>   
@@ -109,10 +110,10 @@
                 <a class="painters__link" href="./artists/svizhak.html">
                     <div class="painters__card">
                         <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__oksana_svizhak"></div>
+                        <div class="painter__bg-img painter__svizhak_oksana"></div>
                         <div class="avatar-wrapper">
                             <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/oksana_svizhak/oksana_svizhak.png">
+                                <img class="avatar" src="./src/img/artists/svizhak_oksana/svizhak_oksana.png">
                             </div>
                             <p class="avatar__name">Oksana Svizhak <br> <span class="avatar__name-ua">Оксана Свіжак</span></p>                        
                         </div>
@@ -122,10 +123,10 @@
                 <a class="painters__link" href="./artists/luniv.html">
                     <div class="painters__card">
                         <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__marian_luniv"></div>
+                        <div class="painter__bg-img painter__luniv_marian"></div>
                         <div class="avatar-wrapper">
                             <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/marian_luniv/marian_luniv.png">
+                                <img class="avatar" src="./src/img/artists/luniv_marian/luniv_marian.png">
                             </div>
                             <p class="avatar__name">Marian Luniv <br> <span class="avatar__name-ua">Мар'ян Лунів</span></p>                        
                         </div>
@@ -135,10 +136,10 @@
                 <a class="painters__link" href="./artists/bazyuk.html">
                     <div class="painters__card">
                         <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__sviatoslav_bazyuk"></div>
+                        <div class="painter__bg-img painter__bazyuk_sviatoslav"></div>
                         <div class="avatar-wrapper">
                             <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/sviatoslav_bazyuk/sviatoslav_bazyuk.png" >
+                                <img class="avatar" src="./src/img/artists/bazyuk_sviatoslav/bazyuk_sviatoslav.png" >
                             </div>                        
                             <p class="avatar__name">Sviatoslav Bazyuk <br> <span class="avatar__name-ua">Святослав Базюк</span></p>                        
                         </div>
@@ -148,10 +149,10 @@
                 <a class="painters__link" href="./artists/pyatakova.html">
                     <div class="painters__card">
                         <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__kateryna_pyatakova"></div>
+                        <div class="painter__bg-img painter__pyatakova_kateryna"></div>
                         <div class="avatar-wrapper">
                             <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/kateryna_pyatak/kateryna_pyatakova.png">
+                                <img class="avatar" src="./src/img/artists/pyatakova_kateryna/pyatakova_kateryna.png">
                             </div>                        
                             <p class="avatar__name">Kateryna Pyatakova <br> <span class="avatar__name-ua">Катерина Пятакова</span></p>                        
                         </div>
@@ -159,8 +160,8 @@
                     </div>
                 </a>                
             </div>
-            <a>
-                <p class="painters-all">Всі художники / All artists</p>
+            <a  href="./artists.html">
+                <p class="painters-all" >Всі художники / All artists</p>
             </a>
             <p class="painters">ФОТОГРАФИ / PHOTOGRAPHERS</p>
             <div class="painters-wrapper">
@@ -276,7 +277,7 @@
             </div>
          </section>
 
-         <section class="projects" id="projects">
+         <section class="projects" id="artprojects">
              <header  >
                <h3 class="projects__header">
                  АРТ-проєкти / ART projects

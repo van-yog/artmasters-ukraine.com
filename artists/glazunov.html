@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">    
     <link rel="stylesheet" href="../src/css/swiper.min.css">
+    <link rel="stylesheet" href="../src/css/main.css">
     <script src="../src/js/swiper.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    <title>Всі художники</title>
+    <title>Олексій Глазунов</title>
     <style>
     .swiper-container {
         background-color: #272727;
         width: 100%;
-        height: 450px;
+        height: 90vh
     }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background: transparent;
+      position: relative;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -38,20 +37,62 @@
       align-items: center;
       width: 60%;
     }
-    .swiper-slide:nth-child(2n) {
-      width: 40%;
+    @media (max-width: 640px) {
+        .swiper-slide {
+            width: 100%;
+        }
+        .h-100 {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 85%;
+        }
+    }
+    .swiper-slide  a {
+        display: block;
+        height: 100%;
+        position: relative;
+        text-decoration: none;
+
+    }
+    .swiper-slide p {
+        position: absolute;
+        top:0;
+        text-align: center;
+        color: white;
+        
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border-radius: 50%;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 2px 2px rgb(202, 201, 201);
+    }
+    .swiper-button-next::before,
+    .swiper-button-next::after,
+    .swiper-button-prev::after,
+    .swiper-button-prev::before {
+        background-color: black
     }
 
-    .swiper-slide:nth-child(3n) {
-      width: 20%;
+    .swiper-pagination span{
+        background: rgb(226, 226, 226) !important;
+        box-shadow: 0px 0px 1px 1px rgb(77, 76, 76);
     }
     </style>
 </head>
 <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
-        <span class="mobile__icon"></span>
-    </button>
-    <div class="menu">
+        <a class="mobile__link-home" href="../index.html">
+             <img class="mobile__logo" src="../src/img/logo.png" alt="logo">
+        </a>
+         <span class="mobile__icon"></span>
+     </button>
+    <div class="menu menu__artist">
         <section class="logo-wrapper">
             <div class="logo">
                 <a href="../index.html">
@@ -108,7 +149,7 @@
 
     <header class="artist__header-wrapper">
         <div class="artist__avatar-wrapper">
-            <img class="artist__avatar" src="../src/img/artists/oleksii_glazunov/oleksii_glazunov.png" alt="Олексій Глазунов">
+            <img class="artist__avatar" src="../src/img/artists/glazunov_oleksii/glazunov_oleksii.png" alt="Олексій Глазунов">
         </div>
         <h1 class="artist__header">Alexey Glazunov / Олексій Глазунов</h1>
         <p class="artist__phone">
@@ -138,24 +179,47 @@
                  <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide" >
-                          <img style="height: 100%;"  src="../src/img/artists/oleksii_glazunov/1_13.jpg" alt="">
+                      <div class="swiper-slide">
+                        <a href="../src/img/artists/glazunov_oleksii/v_1.jpg" target="_blank">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_1.jpg" alt="">              
+                        </a>
+                        <p>Картина</p>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../src/img/artists/oleksii_glazunov/1_13.jpg" alt="">
+                          <a  href="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_3.jpg" alt="">
+                          </a>
                       </div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
-                      <div class="swiper-slide">Slide 10</div>
+                      <div class="swiper-slide">
+                          <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_4.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h5.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_4.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_6.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_8.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_9.jpg" alt="">
+                      </div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                   </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
          </section>
 
