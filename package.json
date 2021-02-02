@@ -1,0 +1,25 @@
+{
+  "name": "artmasters-ukraine.com",
+  "version": "1.0.0",
+  "description": "Project for Ukrainian Art-masters",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/van-yog/artmasters-ukraine.com.git"
+  },
+  "author": "Kharchenko Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/van-yog/artmasters-ukraine.com/issues"
+  },
+  "homepage": "https://van-yog.github.io/artmasters-ukraine.com/"
+}
