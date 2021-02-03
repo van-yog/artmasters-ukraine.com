@@ -944,6 +944,13 @@ a {
   margin-bottom: 20px;
 }
 
+.artist__video {
+  width: 660px;
+  height: 415px;
+  border: 0;
+  margin-top: 30px;
+}
+
 .artist__blockquote {
   margin: 0;
   margin-top: -20px;
@@ -973,7 +980,7 @@ a {
 
 .artist__container {
   width: 860px;
-  margin: 0px 50px 0px 250px;
+  margin: 0px auto;
   font-weight: 300;
 }
 
@@ -987,7 +994,7 @@ a {
 }
 
 .h-100 {
-  height: 100%;
+  height: 80vh;
 }
 
 .zhukov-gallery-9 {
@@ -996,7 +1003,7 @@ a {
 
 .arist__about {
   width: 700px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .about-wrapper {
@@ -1324,6 +1331,10 @@ a {
   }
   .artist__container {
     padding: 0 20px;
+  }
+  .artist__video {
+    width: 100%;
+    height: 250px;
   }
 }
 

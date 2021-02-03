@@ -3,9 +3,7 @@
 let mobileBtn = document.querySelector("#mobile-menu");
 
 mobileBtn.addEventListener("click", () => {
-  console.log("Нажали на меню");
   let menu = document.querySelector(".menu");
-  console.log(menu);
   menu.classList.toggle("show");
   let icon = document.querySelector(".mobile__icon");
   icon.classList.toggle("mobile__icon-open");
@@ -13,8 +11,7 @@ mobileBtn.addEventListener("click", () => {
 
 let submenu = document.querySelector(".submenu");
 
-submenu.addEventListener("touchstart", () => {
-  console.log("touch");
+submenu.addEventListener("click", () => {
   let submenu = document.querySelector(".submenu__dnone");
   submenu.classList.toggle("show");
 });
@@ -28,7 +25,6 @@ artist.forEach((elem) => {
     let child = sibling.querySelector(".animation");
     setTimeout(() => child.classList.toggle("animation-height"), 50);
     let close = ev.target.querySelector(".about__header_icon");
-    console.log(close);
     close.classList.toggle("about__header_icon_close");
   });
 });
@@ -37,9 +33,7 @@ let a = document.querySelectorAll(".nav__link ");
 
 a.forEach((elem) => {
   elem.addEventListener("click", (ev) => {
-    console.log("click po link");
     let mobileMenu = document.querySelector(".menu");
-    console.log(mobileMenu);
     mobileMenu.classList.remove("show");
   });
 });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: white;
   margin: 0;
@@ -6,7 +7,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 .mobile__btn {
   display: none;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .menu {
@@ -27,7 +28,7 @@ a {
   background-color: #fafafa;
   width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .menu__artist {
@@ -60,8 +61,8 @@ a {
   display: flex;
   gap: 30px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav__text {
@@ -97,11 +98,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 20%;
   display: none;
 }
@@ -129,7 +130,7 @@ a {
 .sumbenu__bg {
   background-color: #fafafa;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
   padding: 10px 20px;
 }
 
@@ -269,10 +270,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -306,13 +307,7 @@ a {
   position: relative;
   z-index: 2;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(15, 15, 15, 0.5)),
-    to(rgba(0, 0, 0, 0.4))
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.5)), to(rgba(0, 0, 0, 0.4)));
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -463,7 +458,7 @@ a {
 
 .painters__card:hover .painter__bg-img {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .painters__card:hover .painter__bg {
@@ -472,7 +467,7 @@ a {
 
 .painters__card:hover .avatar-wrapper {
   -webkit-transform: translateY(-45px);
-  transform: translateY(-45px);
+          transform: translateY(-45px);
 }
 
 .painters__card:hover .painter__portfolio {
@@ -586,7 +581,7 @@ a {
   border-radius: 2px;
   position: absolute;
   -webkit-transform: rotate(45deg) translate(2px, 4px);
-  transform: rotate(45deg) translate(2px, 4px);
+          transform: rotate(45deg) translate(2px, 4px);
 }
 
 .swiper-button-prev::after {
@@ -597,7 +592,7 @@ a {
   background: #fff;
   position: absolute;
   -webkit-transform: rotate(-45deg) translate(2px, -4px);
-  transform: rotate(-45deg) translate(2px, -4px);
+          transform: rotate(-45deg) translate(2px, -4px);
 }
 
 .swiper-button-next::before {
@@ -608,7 +603,7 @@ a {
   border-radius: 2px;
   position: absolute;
   -webkit-transform: rotate(135deg) translate(2px, -4px);
-  transform: rotate(135deg) translate(2px, -4px);
+          transform: rotate(135deg) translate(2px, -4px);
 }
 
 .swiper-button-next::after {
@@ -619,7 +614,7 @@ a {
   background: #fff;
   position: absolute;
   -webkit-transform: rotate(45deg) translate(-2px, -4px);
-  transform: rotate(45deg) translate(-2px, -4px);
+          transform: rotate(45deg) translate(-2px, -4px);
 }
 
 .swiper-button-prev:after,
@@ -733,8 +728,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 40px;
 }
 
@@ -748,13 +743,13 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .ifnotyou__img {
@@ -771,11 +766,7 @@ a {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.8)
-  );
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
   -webkit-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
 }
@@ -800,7 +791,7 @@ a {
 
 .ifnotyou:hover .ifnotyou__img {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .ifnotyou:hover .ifnotyou__bg {
@@ -837,8 +828,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 15px;
   margin-bottom: 25px;
 }
@@ -859,8 +850,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social__line-center {
@@ -1038,6 +1029,13 @@ a {
   margin-bottom: 20px;
 }
 
+.artist__video {
+  width: 660px;
+  height: 415px;
+  border: 0;
+  margin-top: 30px;
+}
+
 .artist__blockquote {
   margin: 0;
   margin-top: -20px;
@@ -1070,7 +1068,7 @@ a {
 
 .artist__container {
   width: 860px;
-  margin: 0px 50px 0px 250px;
+  margin: 0px auto;
   font-weight: 300;
 }
 
@@ -1084,12 +1082,16 @@ a {
 }
 
 .h-100 {
-  height: 100%;
+  height: 80vh;
+}
+
+.zhukov-gallery-9 {
+  background-image: url("../img/artists/zhukow_andrii/9_Андрей_Жуков_Toxic_80х110.jpg");
 }
 
 .arist__about {
   width: 700px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .about-wrapper {
@@ -1153,7 +1155,7 @@ a {
   height: 1px;
   background-color: black;
   -webkit-transform: translate(5px, 16px);
-  transform: translate(5px, 16px);
+          transform: translate(5px, 16px);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -1165,19 +1167,19 @@ a {
   height: 1px;
   background-color: black;
   -webkit-transform: translate(5px, 14px) rotate(90deg);
-  transform: translate(5px, 14px) rotate(90deg);
+          transform: translate(5px, 14px) rotate(90deg);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
 .about__header_icon_close::after {
   -webkit-transform: translate(5px, 15px) rotate(135deg);
-  transform: translate(5px, 15px) rotate(135deg);
+          transform: translate(5px, 15px) rotate(135deg);
 }
 
 .about__header_icon_close::before {
   -webkit-transform: translate(5px, 16px) rotate(45deg);
-  transform: translate(5px, 16px) rotate(45deg);
+          transform: translate(5px, 16px) rotate(45deg);
 }
 
 .about__header:hover .about__header_icon {
@@ -1256,7 +1258,7 @@ a {
   }
   .sumbenu__bg {
     -webkit-box-shadow: unset;
-    box-shadow: unset;
+            box-shadow: unset;
   }
   .submenu__link:last-child {
     padding-bottom: 28px;
@@ -1268,8 +1270,8 @@ a {
   .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     gap: 0;
   }
@@ -1278,11 +1280,11 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #fafafa;
     height: 62px;
     width: 100%;
@@ -1313,7 +1315,7 @@ a {
     height: 3px;
     background-color: #111;
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
@@ -1324,7 +1326,7 @@ a {
     height: 3px;
     background-color: #111;
     -webkit-transform: translateY(7px);
-    transform: translateY(7px);
+            transform: translateY(7px);
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
@@ -1338,7 +1340,7 @@ a {
     height: 3px;
     background-color: #111;
     -webkit-transform: rotate(45deg) translate(-4px, 2px);
-    transform: rotate(45deg) translate(-4px, 2px);
+            transform: rotate(45deg) translate(-4px, 2px);
   }
   .mobile__icon-open::after {
     content: "";
@@ -1347,7 +1349,7 @@ a {
     height: 3px;
     background-color: #111;
     -webkit-transform: rotate(-45deg) translate(1px, -6px);
-    transform: rotate(-45deg) translate(1px, -6px);
+            transform: rotate(-45deg) translate(1px, -6px);
   }
   .artists__header {
     margin-top: 30px;
@@ -1372,8 +1374,8 @@ a {
     padding: 0 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ifnotyou {
     margin: 0 auto;
@@ -1442,6 +1444,10 @@ a {
   .artist__container {
     padding: 0 20px;
   }
+  .artist__video {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1488,7 +1494,7 @@ a {
   }
   .painters__card:hover .avatar-wrapper {
     -webkit-transform: unset;
-    transform: unset;
+            transform: unset;
   }
   .painters__card:hover .painter__portfolio {
     opacity: 1;
@@ -1522,8 +1528,8 @@ a {
   .art-projects {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
     padding: 0 20px;
   }

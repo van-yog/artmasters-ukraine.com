@@ -9,81 +9,7 @@
     <link rel="stylesheet" href="../src/css/main.css">
     <script src="../src/js/swiper.min.js"></script>
     <title>Олексій Глазунов</title>
-    <style>
-    .swiper-container {
-        background-color: #272727;
-        width: 100%;
-        height: 90vh
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: transparent;
-      position: relative;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      width: 60%;
-    }
-    @media (max-width: 640px) {
-        .swiper-slide {
-            width: 100%;
-        }
-        .h-100 {
-            width: 100%;
-            height: auto;
-        }
-        .swiper-button-next, .swiper-button-prev {
-            top: 85%;
-        }
-    }
-    .swiper-slide  a {
-        display: block;
-        height: 100%;
-        position: relative;
-        text-decoration: none;
-
-    }
-    .swiper-slide p {
-        position: absolute;
-        top:0;
-        text-align: center;
-        color: white;
-        
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-    width: 40px;
-    height: 40px;
-    outline: 0;
-    border-radius: 50%;
-    background-color: rgb(226, 226, 226);
-    box-shadow: 0px 0px 2px 2px rgb(202, 201, 201);
-    }
-    .swiper-button-next::before,
-    .swiper-button-next::after,
-    .swiper-button-prev::after,
-    .swiper-button-prev::before {
-        background-color: black
-    }
-
-    .swiper-pagination span{
-        background: rgb(226, 226, 226) !important;
-        box-shadow: 0px 0px 1px 1px rgb(77, 76, 76);
-    }
-    </style>
+    <link rel="stylesheet" href="../src/css/artists-slider.css">
 </head>
 <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
@@ -133,7 +59,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="../index.html#projects">
+                        <a class="nav__link" href="../index.html#artprojects">
                             <p class="nav__text">АРТПРОЄКТИ</p>
                         </a>
                     </li>
@@ -180,39 +106,41 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <a href="../src/img/artists/glazunov_oleksii/v_1.jpg" target="_blank">
-                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_1.jpg" alt="">              
-                        </a>
-                        <p>Картина</p>
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/1_w.jpg" alt="">   
+                            <p>Картина первая </p>         
+                      </div>
+                      <div  class="swiper-slide">
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/2_w.jpg" alt="">
+                            <p>Картина вторая </p> 
                       </div>
                       <div class="swiper-slide">
-                          <a  href="">
-                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_3.jpg" alt="">
-                          </a>
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/3_h.jpg" alt="">
+                            <p>Картина третяя - "Озарение" </p> 
                       </div>
                       <div class="swiper-slide">
-                          <img class="h-100" src="../src/img/artists/glazunov_oleksii/v_4.jpg" alt="">
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/4_w.jpg" alt="">
+                            <p>Картина четверная - "Полет мысли" </p> 
                       </div>
                       <div class="swiper-slide">
-                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h5.jpg" alt="">
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/5_w.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_1.jpg" alt="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/6_w.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_2.jpg" alt="">
+                            <img class="w-100" src="../src/img/artists/glazunov_oleksii/7_w.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_4.jpg" alt="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/8_h.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                          <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_6.jpg" alt="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/9_h.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_8.jpg" alt="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/10_h.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img class="w-100" src="../src/img/artists/glazunov_oleksii/h_9.jpg" alt="">
+                            <img class="h-100" src="../src/img/artists/glazunov_oleksii/11_h.jpg" alt="">
                       </div>
                     </div>
                     <!-- Add Pagination -->
@@ -267,5 +195,6 @@
   </script>
     
     <script src="../src/js/main.js"></script>
+    <script src="../src/js/artists-slider.js"></script>
 </body>
 </html>
