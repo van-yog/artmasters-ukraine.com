@@ -1,437 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <link rel="shortcut icon" href="./src/img/logo_favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link
+      rel="shortcut icon"
+      href="./src/img/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
-        <img class="mobile__logo" src="./src/img/logo.png" alt="logo">
-        <span class="mobile__icon"></span>
+      <img class="mobile__logo" src="./src/img/logo.png" alt="logo" />
+      <span class="mobile__icon"></span>
     </button>
     <div class="menu">
-        <section class="logo-wrapper">
-            <div class="logo">
-                <a href="/index.html">
-                    <img class="logo__img" src="./src/img/logo.png" alt="logo art masters">
-                </a>
-                <hr class="logo__underline">
-            </div>
-        </section>
-    
-        <section class="nav-wrapper">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="/index.html#about" class="nav__link">
-                            <p class="nav__text">ПРО НАС</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link ">
-                            <div class="submenu" >
-                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
-                                <div class="submenu__dnone"> 
-                                    <div class="arrow-up">
+      <section class="logo-wrapper">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              class="logo__img"
+              src="./src/img/logo.png"
+              alt="logo art masters"
+            />
+          </a>
+          <hr class="logo__underline" />
+        </div>
+      </section>
 
-                                    </div>
-                                    <div class="sumbenu__bg">
-                                        <a class="submenu__link" href="./artists.html">Художники</a>
-                                        <a class="submenu__link" href="#">Фотографи</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="/index.html#catalogues">
-                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="/index.html#artprojects">
-                            <p class="nav__text">АРТПРОЄКТИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="/index.html#contact">
-                            <p class="nav__text">Зворотній зв'язок</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+      <section class="nav-wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html#about" class="nav__link">
+                <p class="nav__text">ПРО НАС</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">
+                <div class="submenu">
+                  <p class="nav__text">
+                    Учасники проєкту <span class="arrow-down"></span>
+                  </p>
+                  <div class="submenu__dnone">
+                    <div class="arrow-up"></div>
+                    <div class="sumbenu__bg">
+                      <a class="submenu__link" href="./artists.html"
+                        >Художники</a
+                      >
+                      <a class="submenu__link" href="#">Фотографи</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/index.html#catalogues">
+                <p class="nav__text">НАШІ КАТАЛОГИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/index.html#artprojects">
+                <p class="nav__text">АРТПРОЄКТИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/index.html#contact">
+                <p class="nav__text">Зворотній зв'язок</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
 
     <section class="header-wrapper">
-            <div class="first-img-wrapper">
-                <img class="first-img" src="./src/img/art_masters_bg.jpg" alt="art master photo">
-            </div>
-            <header class="header">
-                <p class="header__top">ПЛАТФОРМА РОЗВИТКУ СУЧАСНОГО МИСТЕЦВА <br>
-                    THE PLATFORM OF THE MODERN ART DEVELOPMENT</p>
-                <h1 class="header__main">
-                    ARTMASTERS of Ukraine / АРТМАЙСТРИ України
-                </h1>
-                <p class="header__bottom">Портфоліо сучасних українських митців / Portfolios of the modern Ukrainian artists</p>
-            </header>
+      <div class="first-img-wrapper">
+        <img
+          class="first-img"
+          src="./src/img/art_masters_bg.jpg"
+          alt="art master photo"
+        />
+      </div>
+      <header class="header">
+        <p class="header__top">
+          ПЛАТФОРМА РОЗВИТКУ СУЧАСНОГО МИСТЕЦВА <br />
+          THE PLATFORM OF THE MODERN ART DEVELOPMENT
+        </p>
+        <h1 class="header__main">ARTMASTERS of Ukraine / АРТМАЙСТРИ України</h1>
+        <p class="header__bottom">
+          Портфоліо сучасних українських митців / Portfolios of the modern
+          Ukrainian artists
+        </p>
+      </header>
     </section>
 
     <main>
-        <section id="about" class="art">
-            <div class="art__header-wrapper">
-                <hr class="art__hr">
-                <p class="art__header">Про Україну - мовою мистецтва / <span class="art__header-en">About Ukraine in the language of Art</span></p>   
-            </div>
-            <div>
-                <p class="art__text">Мовою мистецтва сучасних українських художників, які працюють у різних напрямках, розкривають безліч тем, обирають різні жанри та стилі.
-                    <br>  Через різноплановість мистецтва ми прагнемо познайомити вас ближче з сучасною Україною, її багатогранністю та величністю. / <span class="art__text-en">In the language of art of contemporary Ukrainian artists, who works in different directions, reveal different topics, choose different genres and styles.
-                    Due to the diversity of art, we strive to bring you closer to contemporary Ukraine, its versatility and grandeur.</span></p>
-            </div>
-        </section>
+      <section id="about" class="art">
+        <div class="art__header-wrapper">
+          <hr class="art__hr" />
+          <p class="art__header">
+            Про Україну - мовою мистецтва /
+            <span class="art__header-en"
+              >About Ukraine in the language of Art</span
+            >
+          </p>
+        </div>
+        <div>
+          <p class="art__text">
+            Мовою мистецтва сучасних українських художників, які працюють у
+            різних напрямках, розкривають безліч тем, обирають різні жанри та
+            стилі. <br />
+            Через різноплановість мистецтва ми прагнемо познайомити вас ближче з
+            сучасною Україною, її багатогранністю та величністю. /
+            <span class="art__text-en"
+              >In the language of art of contemporary Ukrainian artists, who
+              works in different directions, reveal different topics, choose
+              different genres and styles. Due to the diversity of art, we
+              strive to bring you closer to contemporary Ukraine, its
+              versatility and grandeur.</span
+            >
+          </p>
+        </div>
+      </section>
 
-        <section class="participants">
-            <div class="participants__header-wrapper">
-                <h2 class="participants__header">Учасники проєкту</h2>
-                <h3 class="participants__header-en">Our participants</h3>
+      <section class="participants">
+        <div class="participants__header-wrapper">
+          <h2 class="participants__header">Учасники проєкту</h2>
+          <h3 class="participants__header-en">Our participants</h3>
+        </div>
+        <p class="painters">ХУДОЖНИКИ / ARTISTS</p>
+        <div class="painters-wrapper">
+          <a class="painters__link" href="./artists/svizhak.html">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img painter__svizhak_oksana"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/artists/svizhak_oksana/svizhak_oksana.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Oksana Svizhak <br />
+                  <span class="avatar__name-ua">Оксана Свіжак</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
             </div>
-            <p class="painters">ХУДОЖНИКИ / ARTISTS</p>
-            <div class="painters-wrapper">
-                <a class="painters__link" href="./artists/svizhak.html">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__svizhak_oksana"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/svizhak_oksana/svizhak_oksana.png">
-                            </div>
-                            <p class="avatar__name">Oksana Svizhak <br> <span class="avatar__name-ua">Оксана Свіжак</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>
-                <a class="painters__link" href="./artists/luniv.html">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__luniv_marian"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/luniv_marian/luniv_marian.png">
-                            </div>
-                            <p class="avatar__name">Marian Luniv <br> <span class="avatar__name-ua">Мар'ян Лунів</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>
-                <a class="painters__link" href="./artists/bazyuk.html">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__bazyuk_sviatoslav"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/bazyuk_sviatoslav/bazyuk_sviatoslav.png" >
-                            </div>                        
-                            <p class="avatar__name">Sviatoslav Bazyuk <br> <span class="avatar__name-ua">Святослав Базюк</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>
-                <a class="painters__link" href="./artists/pyatakova.html">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img painter__pyatakova_kateryna"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/artists/pyatakova_kateryna/pyatakova_kateryna.png">
-                            </div>                        
-                            <p class="avatar__name">Kateryna Pyatakova <br> <span class="avatar__name-ua">Катерина Пятакова</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>                
+          </a>
+          <a class="painters__link" href="./artists/luniv.html">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img painter__luniv_marian"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/artists/luniv_marian/luniv_marian.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Marian Luniv <br />
+                  <span class="avatar__name-ua">Мар'ян Лунів</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
             </div>
-            <a  href="./artists.html">
-                <p class="painters-all" >Всі художники / All artists</p>
+          </a>
+          <a class="painters__link" href="./artists/bazyuk.html">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img painter__bazyuk_sviatoslav"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/artists/bazyuk_sviatoslav/bazyuk_sviatoslav.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Sviatoslav Bazyuk <br />
+                  <span class="avatar__name-ua">Святослав Базюк</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+          <a class="painters__link" href="./artists/pyatakova.html">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img painter__pyatakova_kateryna"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/artists/pyatakova_kateryna/pyatakova_kateryna.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Kateryna Pyatakova <br />
+                  <span class="avatar__name-ua">Катерина Пятакова</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+        </div>
+        <a href="./artists.html">
+          <p class="painters-all">Всі художники / All artists</p>
+        </a>
+        <p class="painters">ФОТОГРАФИ / PHOTOGRAPHERS</p>
+        <div class="painters-wrapper">
+          <a class="painters__link" href="#">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img photographer-bg-img-url-1"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/mariya_andriichu_avatar.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Mariya Andriichuk <br />
+                  <span class="avatar__name-ua">Марія Андрійчук</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+          <a class="painters__link" href="#">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img photographer-bg-img-url-2"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/yuriy_zilinskiy_avatar.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Yuriy Zilinskiy <br />
+                  <span class="avatar__name-ua">Юрій Зілінський</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+
+          <a class="painters__link" href="#">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img photographer-bg-img-url-3"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/sergii_poznanskyi_avatar.jpg"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Sergii Poznanskyi<br />
+                  <span class="avatar__name-ua">Сергій Познанський</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+          <a class="painters__link" href="#">
+            <div class="painters__card">
+              <div class="painter__bg"></div>
+              <div class="painter__bg-img photographer-bg-img-url-4"></div>
+              <div class="avatar-wrapper">
+                <div class="avatar-wr">
+                  <img
+                    class="avatar"
+                    src="./src/img/igor_zholobak_avatar.png"
+                  />
+                </div>
+                <p class="avatar__name">
+                  Igor Zholobak <br />
+                  <span class="avatar__name-ua">Ігор Жолобак</span>
+                </p>
+              </div>
+              <p class="painter__portfolio">Портфоліо / Portfolio</p>
+            </div>
+          </a>
+        </div>
+        <a href="./artists.html">
+          <p class="painters-all">Всі фотографи / All photographers</p>
+        </a>
+      </section>
+
+      <section class="catalogues-wrapper" id="catalogues">
+        <header>
+          <h2 class="catalogues-header">
+            Наші каталоги <br />
+            <span class="catalogues-header-en">Our catalogues</span>
+          </h2>
+        </header>
+
+        <div class="catalogues">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  class="slide"
+                  href="https://issuu.com/artmasters_ukraine/docs/art_masters_issue"
+                  target="_blank"
+                >
+                  <div class="slide__img-hover slide__bg-1">
+                    <img
+                      class="slide__img"
+                      src="./src/img/catalogue/catalogue.jpg"
+                      alt="catalogue first"
+                    />
+                  </div>
+
+                  <h3 class="slide__header">Catalogue #1</h3>
+                  <p class="slide__text">Каталог</p>
+                  <p class="slide__link">Читати онлайн / Read online</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="slide"
+                  href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_v"
+                  target="_blank"
+                >
+                  <div class="slide__img-hover slide__bg-2">
+                    <img
+                      class="slide__img"
+                      style="margin-top: -25px"
+                      src="./src/img/catalogue/catalogue_2.jpg"
+                      alt="catallogue second"
+                    />
+                  </div>
+
+                  <h3 class="slide__header">Catalogue #2</h3>
+                  <p class="slide__text">Каталог</p>
+                  <p class="slide__link">Читати онлайн / Read online</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="slide"
+                  href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_iv"
+                  target="_blank"
+                >
+                  <div class="slide__img-hover slide__bg-3">
+                    <img
+                      class="slide__img"
+                      src="./src/img/catalogue/catalogue_3.jpg"
+                      alt="catalogue third"
+                    />
+                  </div>
+
+                  <h3 class="slide__header">Catalogue #3</h3>
+                  <p class="slide__text">Каталог</p>
+                  <p class="slide__link">Читати онлайн / Read online</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <section class="projects" id="artprojects">
+        <header>
+          <h3 class="projects__header">АРТ-проєкти / ART projects</h3>
+        </header>
+        <p class="projects__text">
+          1-2 рази на рік наша платформа у співпраці з журналом "Культурний
+          тренд" організовує артпроєкти за участі наших артмайстрів / 1-2 times
+          a year our platform in the partnership with "Culture Trend" magazine
+          hold artprojects with participation of our art masters
+        </p>
+
+        <div class="art-projects">
+          <div class="ifnotyou">
+            <!-- <div class="ifnotyou-bg"></div> -->
+            <img
+              class="ifnotyou__img"
+              src="./src/img/projects/project_1.jpg"
+              alt="project"
+            />
+            <div class="ifnotyou__bg"></div>
+            <h3 class="ifnotyou__header">Genesis / Генезис</h3>
+            <p class="ifnotyou__text">
+              мультимедійний артпроєкт / multimedia art project <br />
+              Прага, Чехія / Prague, Czech Republic <br />
+              2019
+            </p>
+          </div>
+
+          <div class="ifnotyou">
+            <!-- <div class="ifnotyou-bg"></div> -->
+            <img
+              class="ifnotyou__img"
+              src="./src/img/projects/project_2.png"
+              alt="project"
+            />
+            <div class="ifnotyou__bg"></div>
+            <h3 class="ifnotyou__header">Хто, як не Ви? / Who, if not You?</h3>
+            <p class="ifnotyou__text">
+              мультимедійний екопроєкт / multimedia eco project <br />
+              Київ, Україна / Kyiv, Ukraine <br />
+              2020
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <p class="social__text">
+          Підписуйтесь на нас у соціальних мережах, щоб бути в курсі АРТновин
+        </p>
+        <p class="social__text-en">
+          Follow us in social networks to be informed about fresh ARTnews
+        </p>
+        <ul class="social__list">
+          <li>
+            <a
+              href="https://www.facebook.com/artmastersukraine"
+              target="_blank"
+            >
+              <img
+                class="social__logo"
+                src="./src/img/facebook_logo.jpg"
+                alt="facebook"
+              />
             </a>
-            <p class="painters">ФОТОГРАФИ / PHOTOGRAPHERS</p>
-            <div class="painters-wrapper">
-                <a class="painters__link" href="#">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img photographer-bg-img-url-1"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/mariya_andriichu_avatar.png">
-                            </div>                        
-                            <p class="avatar__name">Mariya Andriichuk <br> <span class="avatar__name-ua">Марія Андрійчук</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>                
-                <a class="painters__link" href="#">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img photographer-bg-img-url-2"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/yuriy_zilinskiy_avatar.png">
-                            </div>                        
-                            <p class="avatar__name">Yuriy Zilinskiy <br> <span class="avatar__name-ua">Юрій Зілінський</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>               
-
-                <a class="painters__link" href="#">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img photographer-bg-img-url-3"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/sergii_poznanskyi_avatar.jpg" >
-                            </div>                            
-                            <p class="avatar__name">Sergii Poznanskyi<br> <span class="avatar__name-ua">Сергій Познанський</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>
-                <a class="painters__link" href="#">
-                    <div class="painters__card">
-                        <div class="painter__bg"></div>
-                        <div class="painter__bg-img photographer-bg-img-url-4"></div>
-                        <div class="avatar-wrapper">
-                            <div class="avatar-wr">
-                                <img class="avatar" src="./src/img/igor_zholobak_avatar.png">
-                            </div>                        
-                            <p class="avatar__name">Igor Zholobak <br> <span class="avatar__name-ua">Ігор Жолобак</span></p>                        
-                        </div>
-                        <p class="painter__portfolio">Портфоліо / Portfolio</p>                    
-                    </div>
-                </a>                
-            </div>
-            <a href="./artists.html">
-                <p class="painters-all">Всі фотографи / All photographers</p>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCl-m5gJ9d-NzzbiYNvr6CkA"
+              target="_blank"
+            >
+              <img
+                class="social__logo"
+                src="./src/img/youtub_logo.png"
+                alt="youtube"
+              />
             </a>
-        </section>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/artmasters_ukraine"
+              target="_blank"
+            >
+              <img
+                class="social__logo"
+                src="./src/img/insta_logo.png"
+                alt="instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://issuu.com/artmasters_ukraine" target="_blank">
+              <img
+                class="social__logo-issuu"
+                src="./src/img/issuu_logo.png"
+                alt="issuu"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="social__line">
+          <div class="social__line-left"></div>
+          <div class="social__line-center"></div>
+          <div class="social__line-right"></div>
+        </div>
+      </section>
 
-        <section class="catalogues-wrapper" id="catalogues">   
-            <header>
-                <h2 class="catalogues-header">Наші каталоги <br> 
-                    <span class="catalogues-header-en">Our catalogues</span>
-                </h2>
-            </header>
+      <section class="contact" id="contact">
+        <p class="contact__text">Зворотній зв'язок</p>
+        <p class="contact__text-en">Contact us</p>
 
-            <div class="catalogues"> 
-                <!-- Swiper -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters_issue" target="_blank">
-                            <div class="slide__img-hover slide__bg-1">
-                                <img class="slide__img" src="./src/img/catalogue/catalogue.jpg"  alt="catalogue first">
-                            </div>
-                            
-                            <h3 class="slide__header">Catalogue #1</h3>
-                            <p class="slide__text">Каталог</p>
-                            <p class="slide__link">Читати онлайн / Read online</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_v" target="_blank">
-                            <div class="slide__img-hover slide__bg-2">
-                                <img class="slide__img" style="margin-top: -25px;" src="./src/img/catalogue/catalogue_2.jpg"  alt="catallogue second">
-                            </div>
-                            
-                            <h3 class="slide__header">Catalogue #2</h3>
-                            <p class="slide__text">Каталог</p>
-                            <p class="slide__link">Читати онлайн / Read online</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_iv" target="_blank">
-                            <div class="slide__img-hover slide__bg-3">
-                                <img class="slide__img" src="./src/img/catalogue/catalogue_3.jpg"  alt="catalogue third">
-                            </div>
-                            
-                            <h3 class="slide__header">Catalogue #3</h3>
-                            <p class="slide__text">Каталог</p>
-                            <p class="slide__link">Читати онлайн / Read online</p>
-                        </a>
-                    </div>
-                    </div>
+        <form id="form" class="form" action="">
+          <p class="form__text">E-mail</p>
+          <input
+            class="form__input"
+            id="email"
+            type="Email"
+            placeholder="Your E-mail"
+          />
+          <p class="form__text">Ім'я</p>
+          <p class="form__text-en">Name</p>
+          <input class="form__input" id="name" type="text" />
+          <p class="form__text">Контактний номер телефону</p>
+          <p class="form__text-en">Phone</p>
+          <input class="form__input" id="phone" type="phone" />
+          <p class="form__text">Ваше повідомлення</p>
+          <p class="form__text-en">Your message</p>
+          <textarea
+            class="form__textarea"
+            name=""
+            id="textarea"
+            rows="3"
+            placeholder="Ваше"
+          >
+          </textarea>
 
-                    
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-         </section>
+          <div class="form__error">
+            Пожалуйста, заполните все обязательные поля
+          </div>
 
-         <section class="projects" id="artprojects">
-             <header  >
-               <h3 class="projects__header">
-                 АРТ-проєкти / ART projects
-               </h3>
-             </header>
-             <p class="projects__text">
-                1-2 рази на рік наша платформа у співпраці з журналом "Культурний тренд" організовує артпроєкти за участі наших артмайстрів / 1-2 times a year our platform in the partnership with "Culture Trend" magazine hold artprojects with participation of our art masters
-             </p>
-
-             <div class="art-projects">
-                <div class="ifnotyou">
-                    <!-- <div class="ifnotyou-bg"></div> -->                       
-                    <img class="ifnotyou__img" src="./src/img/projects/project_1.jpg" alt="project">
-                    <div class="ifnotyou__bg"></div>                    
-                    <h3 class="ifnotyou__header">
-                        Genesis / Генезис
-                    </h3>
-                    <p class="ifnotyou__text">
-                        мультимедійний артпроєкт / multimedia art project <br>
-                        Прага, Чехія / Prague, Czech Republic <br>
-                        2019
-                    </p>                    
-                </div>
-
-
-                    <div class="ifnotyou">
-                        <!-- <div class="ifnotyou-bg"></div> -->                       
-                        <img class="ifnotyou__img" src="./src/img/projects/project_2.png" alt="project">
-                        <div class="ifnotyou__bg"></div>                    
-                        <h3 class="ifnotyou__header">
-                            Хто, як не Ви? / Who, if not You?
-                        </h3>
-                        <p class="ifnotyou__text">
-                            мультимедійний екопроєкт / multimedia eco project <br>
-                            Київ, Україна / Kyiv, Ukraine <br>
-                            2020
-                        </p>                    
-                    </div>
-             </div>
-
-         </section>
-
-         <section class="social">
-            <p class="social__text">
-                Підписуйтесь на нас у соціальних мережах, щоб бути в курсі АРТновин
-            </p>
-            <p class="social__text-en">Follow us in social networks to be informed about fresh ARTnews</p>
-            <ul class="social__list">
-                <li>
-                    <a href="https://www.facebook.com/artmastersukraine" target="_blank">
-                        <img class="social__logo" src="./src/img/facebook_logo.jpg" alt="facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCl-m5gJ9d-NzzbiYNvr6CkA" target="_blank">
-                        <img class="social__logo" src="./src/img/youtub_logo.png" alt="youtube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/artmasters_ukraine" target="_blank">
-                        <img class="social__logo" src="./src/img/insta_logo.png" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://issuu.com/artmasters_ukraine" target="_blank">
-                        <img class="social__logo-issuu" src="./src/img/issuu_logo.png" alt="issuu">
-                    </a>
-                </li>
-            </ul>
-            <div class="social__line">
-                <div class="social__line-left"></div>
-                <div class="social__line-center"></div>
-                <div class="social__line-right"></div>
-            </div>
-         </section>
-
-         <section class="contact" id="contact">
-            <p class="contact__text">
-                Зворотній зв'язок
-            </p>
-            <p class="contact__text-en">
-                Contact us
-            </p>
-
-            <form id=form class="form" action="">
-                <p class="form__text">
-                    E-mail                    
-                </p>
-                <input class="form__input" id="email" type="Email" placeholder="Your E-mail">
-                <p class="form__text">
-                    Ім'я
-                </p>
-                <p class="form__text-en">
-                    Name
-                </p>
-                <input class="form__input" id="name" type="text">
-                <p class="form__text">
-                    Контактний номер телефону
-                </p>
-                <p class="form__text-en">
-                    Phone
-                </p>
-                <input class="form__input" id="phone" type="phone">
-                <p class="form__text">
-                    Ваше повідомлення
-                </p>
-                <p class="form__text-en">
-                    Your message
-                </p>
-                <textarea class="form__textarea" name="" id="textarea" rows="3" placeholder="Ваше">
-
-                </textarea>
-
-                <div class="form__error">
-                    Пожалуйста, заполните все обязательные поля
-                </div>
-
-                <button class="form__btn" type="submit">
-                    Відправити / Send
-                </button>
-                
-
-            </form>
-            <div class="social__line margin-b" >
-                <div class="social__line-left"></div>
-                <div class="social__line-center"></div>
-                <div class="social__line-right"></div>
-            </div>
-         </section>
+          <button class="form__btn" type="submit">Відправити / Send</button>
+        </form>
+        <div class="social__line margin-b">
+          <div class="social__line-left"></div>
+          <div class="social__line-center"></div>
+          <div class="social__line-right"></div>
+        </div>
+      </section>
     </main>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerGroup: 1,
+        speed: 700,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+          320: { slidesPerView: 1 },
+          750: { slidesPerView: 2 },
+          1200: { slidesPerView: 3 },
+        },
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 40,
-      slidesPerGroup: 1,
-      speed: 700,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      breakpoints: {
-        320: {slidesPerView: 1},
-        750: {slidesPerView: 2},
-        1200: {slidesPerView:3}
-      },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-
-  <script src="./src/js/main.js"></script>
-</body>
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>

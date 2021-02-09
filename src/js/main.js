@@ -9,13 +9,6 @@ mobileBtn.addEventListener("click", () => {
   icon.classList.toggle("mobile__icon-open");
 });
 
-let submenu = document.querySelector(".submenu");
-
-submenu.addEventListener("click", () => {
-  let submenu = document.querySelector(".submenu__dnone");
-  submenu.classList.toggle("show");
-});
-
 let artist = document.querySelectorAll(".about__header");
 
 artist.forEach((elem) => {
