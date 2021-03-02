@@ -15,8 +15,7 @@ artist.forEach((elem) => {
   elem.addEventListener("click", (ev) => {
     let sibling = ev.target.nextElementSibling;
     sibling.classList.toggle("show");
-    let child = sibling.querySelector(".animation");
-    setTimeout(() => child.classList.toggle("animation-height"), 50);
+
     let close = ev.target.querySelector(".about__header_icon");
     close.classList.toggle("about__header_icon_close");
   });
