@@ -8,7 +8,6 @@ allSliderImgs.forEach((img) => {
   let classSize = "w-100";
 
   let url = img.getAttribute("src").split("/");
-  console.log(url[url.length - 1]);
 
   if (url[url.length - 1].includes("h")) classSize = "h-100";
 
