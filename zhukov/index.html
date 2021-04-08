@@ -7,6 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -266,38 +271,38 @@
       <script>
         let isShowAll = false;
 
-        let list = document.querySelectorAll(".list-inline-item");
+        let list = document.querySelectorAll('.list-inline-item');
         function showAll() {
-          let btn = document.getElementById("showAll");
+          let btn = document.getElementById('showAll');
           btn.innerHTML = isShowAll
-            ? "Показать всю галерею"
-            : "Скрыть всю галерею";
+            ? 'Показать всю галерею'
+            : 'Скрыть всю галерею';
           isShowAll = !isShowAll;
 
           if (isShowAll) {
-            list.forEach((item, i) => (item.style = "display: flex"));
+            list.forEach((item, i) => (item.style = 'display: flex'));
           } else {
             setTimeout(() => {
-              let li = document.querySelectorAll(".list-inline-item");
-              let liActive = document.querySelector(".list-inline-item.active");
-              console.log("active=", liActive.dataset.showId);
+              let li = document.querySelectorAll('.list-inline-item');
+              let liActive = document.querySelector('.list-inline-item.active');
+              console.log('active=', liActive.dataset.showId);
               let id = liActive.dataset.showId;
 
               li.forEach((item, i) => {
                 if (id > 1 && id < li.length - 2) {
                   if (-3 < id - i && id - i < 3) {
-                    item.style = "display:flex";
+                    item.style = 'display:flex';
                   } else {
-                    item.style = "display:none";
+                    item.style = 'display:none';
                   }
                 }
                 if (id <= 1) {
-                  if (i < 5) item.style = "display:flex";
-                  else item.style = "display:none";
+                  if (i < 5) item.style = 'display:flex';
+                  else item.style = 'display:none';
                 }
                 if (id >= li.length - 2) {
-                  if (li.length - i <= 5) item.style = "display:flex";
-                  else item.style = "display:none";
+                  if (li.length - i <= 5) item.style = 'display:flex';
+                  else item.style = 'display:none';
                 }
               });
             }, 100);
@@ -305,50 +310,50 @@
         }
 
         list.forEach((item, i) => {
-          item.setAttribute("data-show-id", i);
+          item.setAttribute('data-show-id', i);
           if (i > 4) {
-            item.style = "display: none";
+            item.style = 'display: none';
           }
         });
 
-        let ol = document.querySelectorAll(".list-inline-item");
+        let ol = document.querySelectorAll('.list-inline-item');
 
-        let prev = document.querySelector(".carousel-control-prev");
-        let next = document.querySelector(".carousel-control-next");
+        let prev = document.querySelector('.carousel-control-prev');
+        let next = document.querySelector('.carousel-control-next');
 
-        prev.addEventListener("click", handleThumbs);
-        next.addEventListener("click", handleThumbs);
+        prev.addEventListener('click', handleThumbs);
+        next.addEventListener('click', handleThumbs);
 
         function handleThumbs({ target }) {
           if (isShowAll) return;
           setTimeout(() => {
-            let li = document.querySelectorAll(".list-inline-item");
-            let liActive = document.querySelector(".list-inline-item.active");
-            console.log("active=", liActive.dataset.showId);
+            let li = document.querySelectorAll('.list-inline-item');
+            let liActive = document.querySelector('.list-inline-item.active');
+            console.log('active=', liActive.dataset.showId);
             let id = liActive.dataset.showId;
 
             li.forEach((item, i) => {
               if (id > 1 && id < li.length - 2) {
                 if (-3 < id - i && id - i < 3) {
-                  item.style = "display:flex";
+                  item.style = 'display:flex';
                 } else {
-                  item.style = "display:none";
+                  item.style = 'display:none';
                 }
               }
               if (id <= 1) {
-                if (i < 5) item.style = "display:flex";
-                else item.style = "display:none";
+                if (i < 5) item.style = 'display:flex';
+                else item.style = 'display:none';
               }
               if (id >= li.length - 2) {
-                if (li.length - i <= 5) item.style = "display:flex";
-                else item.style = "display:none";
+                if (li.length - i <= 5) item.style = 'display:flex';
+                else item.style = 'display:none';
               }
             });
           }, 100);
         }
 
         ol.forEach((item) =>
-          item.addEventListener("click", handleThumbs, true)
+          item.addEventListener('click', handleThumbs, true)
         );
         console.log(ol);
       </script>
@@ -421,17 +426,17 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: "auto",
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 40,
         speed: 700,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
       });

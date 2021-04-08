@@ -1,4 +1,4 @@
-let root = document.getElementById("root");
+let root = document.getElementById('root');
 
 class App extends React.Component {
   constructor({ imgs }) {
@@ -16,19 +16,23 @@ class App extends React.Component {
       isRight: true,
       thumbsPush: false,
       text: [
-        "Картина 1, Масло, Холст",
-        "Картина 2, Акварель, Холст 30*50",
-        "Картина 3, Гуаш, Холст 300*500",
-        "Картина 4, Масло, Холст",
-        "Картина 5, Масло, Холст 200*10",
-        "Картина 6, Акварель, Холст",
-        "Картина 7, Гуаш, Холст",
-        "Картина 8, Масло, Холст",
-        "Картина 9, Масло, Холст",
-        "Картина 10, Масло, Холст",
-        "Картина 11, Масло, Холст",
-        "Картина 12, Масло, Холст",
-        "Картина 13, Масло, Холст",
+        `Ворони / Crows,
+        полотно олія / canvas, oil
+          80x110 cm`,
+        `Півень / A cock
+          полотно, олія / canvas, oil
+          75x105 cm`,
+        'Картина 3, Гуаш, Холст 300*500',
+        'Картина 4, Масло, Холст',
+        'Картина 5, Масло, Холст 200*10',
+        'Картина 6, Акварель, Холст',
+        'Картина 7, Гуаш, Холст',
+        'Картина 8, Масло, Холст',
+        'Картина 9, Масло, Холст',
+        'Картина 10, Масло, Холст',
+        'Картина 11, Масло, Холст',
+        'Картина 12, Масло, Холст',
+        'Картина 13, Масло, Холст',
       ],
     };
   }
@@ -78,8 +82,8 @@ class App extends React.Component {
           {this.state.gallery.map((item, idx) => {
             let display =
               currentPhoto === idx || prevPhoto === idx
-                ? "show-content"
-                : "hide-content";
+                ? 'show-content'
+                : 'hide-content';
 
             if (thumbsPush) {
               isRight = currentPhoto > prevPhoto ? true : false;
@@ -91,9 +95,9 @@ class App extends React.Component {
                 className={`gallery__main-link 
                   ${display} 
                   ${
-                    currentPhoto === idx ? (isRight ? "toLeft" : "toRight") : ""
+                    currentPhoto === idx ? (isRight ? 'toLeft' : 'toRight') : ''
                   }
-                  ${prevPhoto === idx && "hidePhoto"}`}
+                  ${prevPhoto === idx && 'hidePhoto'}`}
                 href={`../src/img/artists/zhukow_andrii/react-gallery/${
                   idx + 1
                 }.jpg`}
@@ -114,13 +118,21 @@ class App extends React.Component {
         </div>
 
         <div className="gallery__text">
-          {this.state.text[this.state.currentPhoto].split(",").map((item) => (
-            <p>{item}</p>
-          ))}
+          {this.state.text[this.state.currentPhoto]
+            .split('\n')
+            .map((item, idx) => {
+              let arr = item.split('/');
+              let style = idx === 0 ? 'nazvanie' : '';
+              return (
+                <p className={style}>
+                  <span>{arr[0]}</span> / <span>{arr[1]}</span>
+                </p>
+              );
+            })}
         </div>
 
         <div
-          className={`gallery__thumbs ${showAll ? "gallery__thumbs-all" : ""}`}
+          className={`gallery__thumbs ${showAll ? 'gallery__thumbs-all' : ''}`}
         >
           {this.state.gallery.map((item, idx) => {
             let isShow;
@@ -134,10 +146,10 @@ class App extends React.Component {
             return (
               <img
                 className={`gallery__thumbs-img ${
-                  idx === currentPhoto ? "gallery__acitve-thumbs" : ""
+                  idx === currentPhoto ? 'gallery__acitve-thumbs' : ''
                 }  `}
                 style={{
-                  display: `${isShow ? "block" : "none"}`,
+                  display: `${isShow ? 'block' : 'none'}`,
                 }}
                 key={item}
                 data-id={idx}
@@ -156,8 +168,8 @@ class App extends React.Component {
             type="button"
           >
             {!this.state.showAll
-              ? "Показать всю галерею"
-              : "Скрыть всю галерею"}
+              ? 'Показать всю галерею'
+              : 'Скрыть всю галерею'}
           </button>
         </div>
       </React.Fragment>
