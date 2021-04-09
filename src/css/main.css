@@ -1076,6 +1076,7 @@ pre {
 .artist__container {
   width: 860px;
   margin: 0px auto;
+  font-weight: 300;
 }
 
 .gallery-wrapper {
