@@ -76,7 +76,7 @@ class App extends React.Component {
       <React.Fragment>
         <div className="gallery__top">
           <button className="left-gallery" onClick={this.leftPhoto}>
-            <i className="fas fa-arrow-left"></i>
+            <i class="fas fa-angle-left"></i>
           </button>
 
           {this.state.gallery.map((item, idx) => {
@@ -113,7 +113,7 @@ class App extends React.Component {
             );
           })}
           <button className="right-gallery" onClick={this.rightPhoto}>
-            <i className="fas fa-arrow-right"></i>
+            <i class="fas fa-angle-right"></i>
           </button>
         </div>
 
@@ -122,7 +122,7 @@ class App extends React.Component {
             .split('\n')
             .map((item, idx) => {
               let arr = item.split('/');
-              let style = idx === 0 ? 'nazvanie' : '';
+              let style = idx === 0 ? 'nazvanie' : 'pika';
               return (
                 <p className={style}>
                   <span>{arr[0]}</span> / <span>{arr[1]}</span>
@@ -168,8 +168,8 @@ class App extends React.Component {
             type="button"
           >
             {!this.state.showAll
-              ? 'Показать всю галерею'
-              : 'Скрыть всю галерею'}
+              ? 'Більше робіт / More artworks'
+              : 'Менше робіт / Less artworks'}
           </button>
         </div>
       </React.Fragment>

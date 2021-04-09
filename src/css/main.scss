@@ -959,10 +959,12 @@ pre {
 }
 
 .artist__blockquote {
+  font-family: 'Poiret One';
+  font-weight: 700;
   margin: 0;
   margin-top: -20px;
   font-size: 16px;
-  font-weight: 300;
+  // font-weight: 300;
   line-height: 1.35;
 }
 .artist__quote {
@@ -988,7 +990,6 @@ pre {
 .artist__container {
   width: 860px;
   margin: 0px auto;
-  font-weight: 300;
 }
 
 .gallery-wrapper {
@@ -1627,25 +1628,43 @@ pre {
 
 .left-gallery,
 .right-gallery {
-  border-radius: 50%;
   width: 40px;
   height: 40px;
+  outline: 0;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: rgb(226, 226, 226);
+
+  box-shadow: 0px 0px 2px 2px rgb(214, 214, 214);
   outline: none;
-  border: 1px solid grey;
-  cursor: pointer;
+  border: none;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#showAll {
+  padding: 10px 15px;
+  font-family: 'Roboto';
+  border-radius: 10px;
+  background-color: rgb(226, 226, 226);
+
+  box-shadow: 0px 0px 2px 2px rgb(214, 214, 214);
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .left-gallery:hover,
 .right-gallery:hover {
-  background-color: #b4b4b4;
-  border: 1px solid rgb(19, 18, 18);
+  background-color: #c9c9c9;
+  border: none;
 }
 
 .left-gallery i,
 .right-gallery i {
-  transform: scale(1.3);
-  color: black;
+  transform: scale(2);
+  color: #353535;
 }
 
 .gallery__thumbs {
@@ -1698,9 +1717,20 @@ pre {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 10px;
+  margin: 25px 15px 15px 15px;
 }
 
 .nazvanie {
   font-family: 'Poiret One', cursive;
+  font-size: 24px;
+}
+
+.pika {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.body {
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
 }
