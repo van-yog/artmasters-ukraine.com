@@ -959,12 +959,10 @@ pre {
 }
 
 .artist__blockquote {
-  font-family: 'Poiret One';
-  font-weight: 700;
   margin: 0;
   margin-top: -20px;
   font-size: 16px;
-  // font-weight: 300;
+  font-weight: 300;
   line-height: 1.35;
 }
 .artist__quote {
@@ -1655,6 +1653,11 @@ pre {
   cursor: pointer;
 }
 
+#showAll:hover {
+  background-color: #c9c9c9;
+  border: none;
+}
+
 .left-gallery:hover,
 .right-gallery:hover {
   background-color: #c9c9c9;
@@ -1730,7 +1733,12 @@ pre {
   font-weight: 400;
 }
 
-.body {
+.cormorant {
   font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+
+.poiretOne {
+  font-family: 'Poiret One', cursive;
   font-weight: 700;
 }

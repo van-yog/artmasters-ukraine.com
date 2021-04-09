@@ -122,7 +122,7 @@ class App extends React.Component {
             .split('\n')
             .map((item, idx) => {
               let arr = item.split('/');
-              let style = idx === 0 ? 'nazvanie' : 'pika';
+              let style = idx === 0 ? 'nazvanie' : 'cormorant';
               return (
                 <p className={style}>
                   <span>{arr[0]}</span> / <span>{arr[1]}</span>
