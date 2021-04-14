@@ -135,11 +135,21 @@ class App extends React.Component {
           className={`gallery__thumbs ${showAll ? 'gallery__thumbs-all' : ''}`}
         >
           {this.state.gallery.map((item, idx) => {
+            let count = window.innerWidth < 700 ? 5 : 7;
+            console.log('count = ', count);
+
             let isShow;
-            if (idx >= currentPhoto - 3 && idx <= currentPhoto + 3)
+            if (
+              idx >= currentPhoto - Math.floor(count / 2) &&
+              idx <= currentPhoto + Math.floor(count / 2)
+            )
               isShow = true;
-            if (currentPhoto < 3 && idx < 7) isShow = true;
-            if (currentPhoto >= gallery.length - 3 && idx >= gallery.length - 7)
+            if (currentPhoto < Math.floor(count / 2) && idx < count)
+              isShow = true;
+            if (
+              currentPhoto >= gallery.length - Math.floor(count / 2) &&
+              idx >= gallery.length - count
+            )
               isShow = true;
 
             if (showAll) isShow = true;

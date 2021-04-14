@@ -1657,6 +1657,7 @@ pre {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
+  text-align: center;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   left: 50%;
@@ -1819,6 +1820,7 @@ pre {
 
 .left-gallery,
 .right-gallery {
+  z-index: 5;
   width: 40px;
   height: 40px;
   outline: 0;
@@ -1931,8 +1933,9 @@ pre {
 }
 
 .nazvanie {
-  font-family: 'Poiret One', cursive;
   font-size: 24px;
+  font-weight: 400;
+  font-family: 'Roboto';
 }
 
 .pika {
@@ -1948,5 +1951,26 @@ pre {
 .poiretOne {
   font-family: 'Poiret One', cursive;
   font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .left-gallery,
+  .right-gallery {
+    margin: 5px;
+    margin-top: 350px;
+  }
+  .gallery__main-img {
+    width: 85%;
+    height: auto;
+  }
+  .gallery__text {
+    width: 90%;
+  }
+  .gallery__thumbs {
+    width: 95%;
+  }
+  .gallery__thumbs-img {
+    height: 7vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
