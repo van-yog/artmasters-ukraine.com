@@ -8,6 +8,12 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="../src/img/logo_favicon.png"
       type="image/x-icon"
@@ -127,10 +133,10 @@
         </div>
       </section>
 
-      <section class="gallery-wrapper">
-        <div class="gallery">
-          <!-- Swiper -->
-          <div class="swiper-container">
+      <!-- <section class="gallery-wrapper">
+        <div class="gallery"> -->
+      <!-- Swiper -->
+      <!-- <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
@@ -313,14 +319,16 @@
                   alt=""
                 />
               </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            </div> -->
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-      </section>
+      </section> -->
+
+      <section id="root" class="gallery-react"></section>
 
       <section class="arist__about">
         <div class="about-wrapper">
@@ -381,5 +389,19 @@
 
     <script src="../src/js/main.js"></script>
     <script src="../src/js/artists-slider.js"></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      type="text/babel"
+      src="../src/js/react-gallery/react-gallery-markariyan.js"
+    ></script>
   </body>
 </html>
