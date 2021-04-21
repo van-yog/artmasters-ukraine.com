@@ -1,111 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">    
-    <link rel="stylesheet" href="../src/css/swiper.min.css">
-    <link rel="stylesheet" href="../src/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../src/img/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/css/swiper.min.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
     <script src="../src/js/swiper.min.js"></script>
     <title>Надія Горбатова</title>
-    <link rel="stylesheet" href="../src/css/artists-slider.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../src/css/artists-slider.css" />
+  </head>
+  <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
-        <a class="mobile__link-home" href="../index.html">
-             <img class="mobile__logo" src="../src/img/logo.png" alt="logo">
-        </a>
-         <span class="mobile__icon"></span>
-     </button>
+      <a class="mobile__link-home" href="../index.html">
+        <img class="mobile__logo" src="../src/img/logo.png" alt="logo" />
+      </a>
+      <span class="mobile__icon"></span>
+    </button>
     <div class="menu menu__artist">
-        <section class="logo-wrapper">
-            <div class="logo">
-                <a href="../index.html">
-                    <img class="logo__img" src="../src/img/logo.png" alt="logo art masters">
-                </a>
-                <hr class="logo__underline">
-            </div>
-        </section>
-    
-        <section class="nav-wrapper">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html">
-                            <p class="nav__text">ПРО НАС</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link ">
-                            <div class="submenu" >
-                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
-                                <div class="submenu__dnone"> 
-                                    <div class="arrow-up">
+      <section class="logo-wrapper">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              class="logo__img"
+              src="../src/img/logo.png"
+              alt="logo art masters"
+            />
+          </a>
+          <hr class="logo__underline" />
+        </div>
+      </section>
 
-                                    </div>
-                                    <div class="sumbenu__bg">
-                                        <a class="submenu__link" href="../artists.html">Художники</a>
-                                        <a class="submenu__link" href="#">Фотографи</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#catalogues">
-                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#artprojects">
-                            <p class="nav__text">АРТПРОЄКТИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#contact">
-                            <p class="nav__text">Зворотній зв'язок</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+      <section class="nav-wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html">
+                <p class="nav__text">ПРО НАС</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">
+                <div class="submenu">
+                  <p class="nav__text">
+                    Учасники проєкту <span class="arrow-down"></span>
+                  </p>
+                  <div class="submenu__dnone">
+                    <div class="arrow-up"></div>
+                    <div class="sumbenu__bg">
+                      <a class="submenu__link" href="../artists.html"
+                        >Художники</a
+                      >
+                      <a class="submenu__link" href="#">Фотографи</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#catalogues">
+                <p class="nav__text">НАШІ КАТАЛОГИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#artprojects">
+                <p class="nav__text">АРТПРОЄКТИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#contact">
+                <p class="nav__text">Зворотній зв'язок</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
 
     <header class="artist__header-wrapper">
-        <div class="artist__avatar-wrapper">
-            <img class="artist__avatar" src="../src/img/artists/gorbatova_nadiia/gorbatova_nadiia.png" alt="Надія Горбатова">
-        </div>
-        <h1 class="artist__header">Nadiia Gorbatova / Надія Горбатова</h1>
-        <p class="artist__phone">
-            nadiiaarts@gmail.com <br>
-            +38 (066) 935-11-99
-        </p>
-        
-        <span class="artist__quote">“</span>
-        
-        <blockquote class="artist__blockquote">            
-            «МОЯ ТВОРЧІСТЬ – ЦЕ, В ПЕРШУ ЧЕРГУ, МОЖЛИВІСТЬ БУТИ У ГАРМОНІЇ З МОБО. ДЛЯ МЕНЕ НЕМАЄ НІЧОГО БІЛЬШ ЖАХЛИВОГО, АНІЖ ПОТВОРНІСТЬ ДУШІ. ЧОРНА ВИПАЛЕНА ПУСТЕЛЯ, В ЯКІЙ НЕ ПРОРОСТЕ ЖОДЕН ПАРОСТОК, НЕ ВПАДЕ ЖОДНА КРАПЛЯ ДОЩУ, НЕ ЗАТРЕМТИТЬ ДУША ВІД НІЖНОСТІ, РАДОСТІ, ЛЮБОВІ, ТИХОГО СМУТКУ. НАВІТЬ ДЛЯ НЕНАВИСТІ ЧИ ЛЮТІ ТАМ НЕМАЄ МІСЦЯ. ТІЛЬКИ ПОРОЖНЕЧА. ТАКИМ Я УЯВЛЯЮ АБСОЛЮТНИЙ АД. ПОРОЖНЕЧА. ПРОТИ ЦЬОГО Я ПРОТЕСТУЮ ВСІЄЮ ДУШЕЮ. МЕНІ СТРАШНО – Я ПЛАЧУ, МЕНІ ТРЕМТЛИВО – Я МОЛЮСЬ, Я ЛЮБЛЮ – Я ДЯКУЮ БОГОВІ ЗА ЦЕ ПОЧУТТЯ. Я ЖИВУ, ПОКИ ВІДЧУВАЮ. <br>І САМЕ ПРО ЦЕ МІЙ ЖИВОПИС.ПРО МЕНЕ. ПРО СВІТ, ЯКИМ Я ЙОГО БАЧУ, ПРО ЛЮДЕЙ, ЯКИМИ Я ЇХ ВІДЧУВАЮ. ПРО ЗБЕНТЕЖЕННЯ, ЗАНЕПОКОЄННЯ, ЗАХВАТ, РАДІСТЬ, ГОРДІСТЬ, НІЖНІСТЬ, ЛЮБОВ. ЖИВОПИС ДЛЯ МЕНЕ – ЦЕ МОЛИТВА. І КОЛИ ТИ ЧУЄШ, ЯК БОГ ВІДПОВІДАЄ ТОБІ, ВИХОДЯТЬ НЕЙМОВІРНІ РЕЧІ»
-        </blockquote>
+      <div class="artist__avatar-wrapper">
+        <img
+          class="artist__avatar"
+          src="../src/img/artists/gorbatova_nadiia/gorbatova_nadiia.png"
+          alt="Надія Горбатова"
+        />
+      </div>
+      <h1 class="artist__header">Nadiia Gorbatova / Надія Горбатова</h1>
+      <p class="artist__phone">
+        nadiiaarts@gmail.com <br />
+        +38 (066) 935-11-99
+      </p>
+
+      <span class="artist__quote">“</span>
+
+      <blockquote class="artist__blockquote">
+        «МОЯ ТВОРЧІСТЬ – ЦЕ, В ПЕРШУ ЧЕРГУ, МОЖЛИВІСТЬ БУТИ У ГАРМОНІЇ З МОБО.
+        ДЛЯ МЕНЕ НЕМАЄ НІЧОГО БІЛЬШ ЖАХЛИВОГО, АНІЖ ПОТВОРНІСТЬ ДУШІ. ЧОРНА
+        ВИПАЛЕНА ПУСТЕЛЯ, В ЯКІЙ НЕ ПРОРОСТЕ ЖОДЕН ПАРОСТОК, НЕ ВПАДЕ ЖОДНА
+        КРАПЛЯ ДОЩУ, НЕ ЗАТРЕМТИТЬ ДУША ВІД НІЖНОСТІ, РАДОСТІ, ЛЮБОВІ, ТИХОГО
+        СМУТКУ. НАВІТЬ ДЛЯ НЕНАВИСТІ ЧИ ЛЮТІ ТАМ НЕМАЄ МІСЦЯ. ТІЛЬКИ ПОРОЖНЕЧА.
+        ТАКИМ Я УЯВЛЯЮ АБСОЛЮТНИЙ АД. ПОРОЖНЕЧА. ПРОТИ ЦЬОГО Я ПРОТЕСТУЮ ВСІЄЮ
+        ДУШЕЮ. МЕНІ СТРАШНО – Я ПЛАЧУ, МЕНІ ТРЕМТЛИВО – Я МОЛЮСЬ, Я ЛЮБЛЮ – Я
+        ДЯКУЮ БОГОВІ ЗА ЦЕ ПОЧУТТЯ. Я ЖИВУ, ПОКИ ВІДЧУВАЮ. <br />І САМЕ ПРО ЦЕ
+        МІЙ ЖИВОПИС.ПРО МЕНЕ. ПРО СВІТ, ЯКИМ Я ЙОГО БАЧУ, ПРО ЛЮДЕЙ, ЯКИМИ Я ЇХ
+        ВІДЧУВАЮ. ПРО ЗБЕНТЕЖЕННЯ, ЗАНЕПОКОЄННЯ, ЗАХВАТ, РАДІСТЬ, ГОРДІСТЬ,
+        НІЖНІСТЬ, ЛЮБОВ. ЖИВОПИС ДЛЯ МЕНЕ – ЦЕ МОЛИТВА. І КОЛИ ТИ ЧУЄШ, ЯК БОГ
+        ВІДПОВІДАЄ ТОБІ, ВИХОДЯТЬ НЕЙМОВІРНІ РЕЧІ»
+      </blockquote>
     </header>
     <main>
-        <section class="artist artist__container">
-            <div class="artist-wrapper">
-                <hr class="art__hr">
-                <p class="artist__font">Пропускати все через себе – це дар чи прокляття? Таке відчуття, що ти стоїш з оголеною шкірою на вершині пагорба під дощем та під натиском вітру.
-                </p>   
-            </div>
-            <div>
-                <p class="artist__text">Протягом останніх 13-ти років Надія професійно займається дизайном інтер'єрів, але чотири роки тому у її житті відновилося захоплення живописом, якому вона навчалась у Полтавській художній школі: сьогодні цей напрям займає перше місце у професійних пріоритетах Надії. <br>Надія народилася в Полтаві, закінчила Полтавську художню школу, вищу освіту отримала за напрямком «Архітектура». З 2016-го року бере участь у різноманітних художніх виставках та артпроєктах як в Україні, так і за кордоном.<br><br><span style="font-size: 14px;"><strong>– Надія, у чому, на вашу думку, полягає головне завдання художника? </strong><br>– Будь-яка творчість – це діалог. Коли моїм емоціям та думкам тісно всередині, я випускаю їх на полотно. Художник – це оратор. Тільки замість слів він використовує колір та форму. <br>Кожен з нас сприймає світ по-своєму. Ми по-різному чуємо звуки, по-різному відчуваємо запахи, по-різному бачимо кольори.<br>Деяким з нас дано пропускати світ через себе, не просто бачити його, але відчувати кожною клітиною тіла, кожною струною душі. <br>Пропускати все через себе – це дар чи прокляття? Таке відчуття, що ти стоїш з оголеною шкірою на вершині пагорба під дощем та під натиском вітру. <br>І відчуваєш кожну краплю, кожен порив вітру. Як вгамувати своє занепокоєння?<br>Для мене світ багатокольоровий. Звуки мають колір, запахи мають колір, люди, які мене оточують, мають свій колір. І я хочу говорити про це, іноді навіть кричати про це. Мені потрібно, ні, мені просто необхідно зупинятися та вдивлятися. У небо, у малюнок, в обличчя перехожих. У тих, кого люблю, та в тих, хто хвилює. Вдивлятися у себе. В те, що всередині мене, в те, що мене турбує, в те, що потребує виходу назовні. <br>Дуже уважно вдивлятися. <br>Бачити.<br>Сприймати.<br>Вбирати у себе запахи.<br>Дихати.<br>Відчувати тонкі срібні нитки, якими зв'язують мене зі світом. <br>Побачити свій шлях. Прийняти його та пройти його. Навіть якщо моторошно. І боляче. І не знаєш, що чекає на тебе за поворотом.
-                </p>
-            </div>
-        </section>
+      <section class="artist artist__container">
+        <div class="artist-wrapper">
+          <hr class="art__hr" />
+          <p class="artist__font">
+            Пропускати все через себе – це дар чи прокляття? Таке відчуття, що
+            ти стоїш з оголеною шкірою на вершині пагорба під дощем та під
+            натиском вітру.
+          </p>
+        </div>
+        <div>
+          <p class="artist__text">
+            Протягом останніх 13-ти років Надія професійно займається дизайном
+            інтер'єрів, але чотири роки тому у її житті відновилося захоплення
+            живописом, якому вона навчалась у Полтавській художній школі:
+            сьогодні цей напрям займає перше місце у професійних пріоритетах
+            Надії.
+            <br />
+            Надія народилася в Полтаві, закінчила Полтавську художню школу, вищу
+            освіту отримала за напрямком «Архітектура». З 2016-го року бере
+            участь у різноманітних художніх виставках та артпроєктах як в
+            Україні, так і за кордоном.
+            <br /><br />
+            <span style="font-size: 14px;">
+              <strong
+                >– Надія, у чому, на вашу думку, полягає головне завдання
+                художника?
+              </strong>
+              <br />
+              – Будь-яка творчість – це діалог. Коли моїм емоціям та думкам
+              тісно всередині, я випускаю їх на полотно. Художник – це оратор.
+              Тільки замість слів він використовує колір та форму.
+              <br />
+              Кожен з нас сприймає світ по-своєму. Ми по-різному чуємо звуки,
+              по-різному відчуваємо запахи, по-різному бачимо кольори.
+              <br />
+              Деяким з нас дано пропускати світ через себе, не просто бачити
+              його, але відчувати кожною клітиною тіла, кожною струною душі.
+              <br />
+              Пропускати все через себе – це дар чи прокляття? Таке відчуття, що
+              ти стоїш з оголеною шкірою на вершині пагорба під дощем та під
+              натиском вітру.
+              <br />
+              І відчуваєш кожну краплю, кожен порив вітру. Як вгамувати своє
+              занепокоєння?
+              <br />
+              Для мене світ багатокольоровий. Звуки мають колір, запахи мають
+              колір, люди, які мене оточують, мають свій колір. І я хочу
+              говорити про це, іноді навіть кричати про це. Мені потрібно, ні,
+              мені просто необхідно зупинятися та вдивлятися. У небо, у малюнок,
+              в обличчя перехожих. У тих, кого люблю, та в тих, хто хвилює.
+              Вдивлятися у себе. В те, що всередині мене, в те, що мене турбує,
+              в те, що потребує виходу назовні.
+              <br />
+              Дуже уважно вдивлятися.
+              <br />
+              Бачити.
+              <br />
+              Сприймати.
+              <br />
+              Вбирати у себе запахи.<br />Дихати.<br />Відчувати тонкі срібні
+              нитки, якими зв'язують мене зі світом.
+              <br />
+              Побачити свій шлях. Прийняти його та пройти його. Навіть якщо
+              моторошно. І боляче. І не знаєш, що чекає на тебе за поворотом.
+            </span>
+          </p>
+        </div>
+      </section>
 
-        <section class="gallery-wrapper">  
-            <div class="gallery"> 
-                 <!-- Swiper -->
-                <div class="swiper-container">
+      <!-- <section class="gallery-wrapper">  
+            <div class="gallery">  -->
+      <!-- Swiper -->
+      <!-- <div class="swiper-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <img  src="../src/img/artists/gorbatova_nadiia/1_h.jpg" alt="">                          
@@ -134,74 +224,108 @@
                       <div class="swiper-slide">
                         <img  src="../src/img/artists/gorbatova_nadiia/9_h.jpg" alt="">                          
                       </div>                            
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    </div> -->
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div>
                   </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-         </section>
+         </section> -->
 
-         <section class="arist__about">
-            <div class="about-wrapper">
-                <p class="about__header"> Персональні виставки <span class="about__header_icon"></span></p>
-                 <div class="about__header-dnone">  
-                    2018 р. – «Rolling in the deep» (Київ, Україна)<br>2017 р. – «Неспокій» (Київ, Україна)
-                    <div class="animation"></div>
-                </div>
-            </div>
-            
-            <div class="about-wrapper">
-                <p class="about__header"> Колективні виставки <span class="about__header_icon"></span></p>
-                 <div class="about__header-dnone">  
-                    2016 р. – участь в Ukrainian Art Week (Київ, Україна)<br>2017 р. – картина «Дорога» була обрана організаторами виставки для участі в Ankara Art Fair (Анкара, Турція)<br>2017 р. – картина «Шлях» взяла участь у виставці «Імпресіонізм, українська версія» (Париж, Франція)<br>2018 р. – участь у міжнародному проєкті Woman's Essence (Мадрид, Испанія)
-                    <div class="animation"></div>
+      <section id="root" class="gallery-react"></section>
 
-                </div>
-            </div>
-         </section>
+      <section class="arist__about">
+        <div class="about-wrapper">
+          <p class="about__header">
+            Персональні виставки <span class="about__header_icon"></span>
+          </p>
+          <div class="about__header-dnone">
+            2018 р. – «Rolling in the deep» (Київ, Україна)<br />2017 р. –
+            «Неспокій» (Київ, Україна)
+            <div class="animation"></div>
+          </div>
+        </div>
 
-         <section class="catalogues__artist">
-            <div class="catalogues__artist-header">
-               Випуски каталогів / Catalogues' issues
+        <div class="about-wrapper">
+          <p class="about__header">
+            Колективні виставки <span class="about__header_icon"></span>
+          </p>
+          <div class="about__header-dnone">
+            2016 р. – участь в Ukrainian Art Week (Київ, Україна)<br />2017 р. –
+            картина «Дорога» була обрана організаторами виставки для участі в
+            Ankara Art Fair (Анкара, Турція)<br />2017 р. – картина «Шлях» взяла
+            участь у виставці «Імпресіонізм, українська версія» (Париж,
+            Франція)<br />2018 р. – участь у міжнародному проєкті Woman's
+            Essence (Мадрид, Испанія)
+            <div class="animation"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalogues__artist">
+        <div class="catalogues__artist-header">
+          Випуски каталогів / Catalogues' issues
+        </div>
+        <div class="catalogues__artist-text">
+          за участі Надії Горбатової / with the participation of Nadiia
+          Gorbatova
+        </div>
+        <div class="catalogues__art">
+          <a
+            class="slide"
+            href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_iv"
+            target="_blank"
+          >
+            <div class="slide__img-hover slide__bg-3">
+              <img
+                class="slide__img"
+                src="../src/img/catalogue/catalogue_3.jpg"
+                alt="catalogue third"
+              />
             </div>
-            <div class="catalogues__artist-text">
-                за участі Надії Горбатової / with the participation of Nadiia Gorbatova
-            </div>
-            <div class="catalogues__art">
-                <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_iv" target="_blank">
-                    <div class="slide__img-hover slide__bg-3">
-                        <img class="slide__img" src="../src/img/catalogue/catalogue_3.jpg"  alt="catalogue third">
-                    </div>
-                    
-                    <h3 class="slide__header">Catalogue #3</h3>
-                    <p class="slide__text">Каталог</p>
-                    <p class="slide__link">Читати онлайн / Read online</p>
-                </a>
-            </div>
-        </section>
+
+            <h3 class="slide__header">Catalogue #3</h3>
+            <p class="slide__text">Каталог</p>
+            <p class="slide__link">Читати онлайн / Read online</p>
+          </a>
+        </div>
+      </section>
     </main>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-      centeredSlides: true,
-      spaceBetween: 40,
-      speed: 700,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 40,
+        speed: 700,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
     <script src="../src/js/main.js"></script>
     <script src="../src/js/artists-slider.js"></script>
-</body>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      type="text/babel"
+      src="../src/js/react-gallery/react-gallery-gorbatova.js"
+    ></script>
+  </body>
 </html>

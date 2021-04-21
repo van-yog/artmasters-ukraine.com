@@ -1,113 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../src/img/logo_favicon.png" type="image/x-icon">    
-    <link rel="stylesheet" href="../src/css/swiper.min.css">
-    <link rel="stylesheet" href="../src/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../src/img/logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/css/swiper.min.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
     <script src="../src/js/swiper.min.js"></script>
     <title>Мар'яна Блінова</title>
-    <link rel="stylesheet" href="../src/css/artists-slider.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../src/css/artists-slider.css" />
+  </head>
+  <body>
     <button type="button" id="mobile-menu" class="mobile__btn">
-        <a class="mobile__link-home" href="../index.html">
-             <img class="mobile__logo" src="../src/img/logo.png" alt="logo">
-        </a>
-         <span class="mobile__icon"></span>
-     </button>
+      <a class="mobile__link-home" href="../index.html">
+        <img class="mobile__logo" src="../src/img/logo.png" alt="logo" />
+      </a>
+      <span class="mobile__icon"></span>
+    </button>
     <div class="menu menu__artist">
-        <section class="logo-wrapper">
-            <div class="logo">
-                <a href="../index.html">
-                    <img class="logo__img" src="../src/img/logo.png" alt="logo art masters">
-                </a>
-                <hr class="logo__underline">
-            </div>
-        </section>
-    
-        <section class="nav-wrapper">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html">
-                            <p class="nav__text">ПРО НАС</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link ">
-                            <div class="submenu" >
-                                <p class="nav__text">Учасники проєкту <span class="arrow-down"></span> </p>
-                                <div class="submenu__dnone"> 
-                                    <div class="arrow-up">
+      <section class="logo-wrapper">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              class="logo__img"
+              src="../src/img/logo.png"
+              alt="logo art masters"
+            />
+          </a>
+          <hr class="logo__underline" />
+        </div>
+      </section>
 
-                                    </div>
-                                    <div class="sumbenu__bg">
-                                        <a class="submenu__link" href="../artists.html">Художники</a>
-                                        <a class="submenu__link" href="#">Фотографи</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#catalogues">
-                            <p class="nav__text">НАШІ КАТАЛОГИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#artprojects">
-                            <p class="nav__text">АРТПРОЄКТИ</p>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="../index.html#contact">
-                            <p class="nav__text">Зворотній зв'язок</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+      <section class="nav-wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html">
+                <p class="nav__text">ПРО НАС</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">
+                <div class="submenu">
+                  <p class="nav__text">
+                    Учасники проєкту <span class="arrow-down"></span>
+                  </p>
+                  <div class="submenu__dnone">
+                    <div class="arrow-up"></div>
+                    <div class="sumbenu__bg">
+                      <a class="submenu__link" href="../artists.html"
+                        >Художники</a
+                      >
+                      <a class="submenu__link" href="#">Фотографи</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#catalogues">
+                <p class="nav__text">НАШІ КАТАЛОГИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#artprojects">
+                <p class="nav__text">АРТПРОЄКТИ</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html#contact">
+                <p class="nav__text">Зворотній зв'язок</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
 
     <header class="artist__header-wrapper">
-        <div class="artist__avatar-wrapper">
-            <img class="artist__avatar" src="../src/img/artists/blinova_mariana/blinova_mariana.png" alt="Мар'яна Блінова">
-        </div>
-        <h1 class="artist__header">Mariana Blinova / Мар'яна Блінова</h1>
-        <p class="artist__phone">
-            blinova.mariana@gmail.com <br>
-            +38 (050) 555-58-50
-        </p>
-        
-        <span class="artist__quote">“</span>
-        
-        <blockquote class="artist__blockquote">            
-            «Я БАГАТО ПОДОРОЖУЮ. НА МОЄМУ РАХУНКУ "МАНДРІВНИКА" БІЛЯ 40 КРАЇН СВІТУ,<br>ПОНАД 300 МІСТ СВІТУ, БЕЗЛІЧ НАДЗВИЧАЙНИХ КУТОЧКІВ НАШОЇ ЗЕМЛІ.<br>МОЇ РОБОТИ – ЦЕ РЕФЛЕКСІЯ ПОДОРОЖЕЙ У НАЙДИВОВИЖНІШІ МІСЦЯ НА ПЛАНЕТІ.<br>Я ДІЛЮСЬ З ГЛЯДАЧЕМ МИТТЄВИМ ВРАЖЕННЯМ ВІД ЗАХОДУ СОНЦЯ В ТАНЗАНІЇ, ТРЕКІНГУ ЧЕРЕЗ АВСТРІЙСЬКІ АЛЬПИ ЧИ СИЛИ ОДНОГО З НАЙКРАСИВІШИХ ВУЛКАНІВ ІСЛАНДІЇ»
-        </blockquote>
-        <iframe class="artist__video" src="https://www.youtube.com/embed/HmPDl5ckROY"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="artist__avatar-wrapper">
+        <img
+          class="artist__avatar"
+          src="../src/img/artists/blinova_mariana/blinova_mariana.png"
+          alt="Мар'яна Блінова"
+        />
+      </div>
+      <h1 class="artist__header">Mariana Blinova / Мар'яна Блінова</h1>
+      <p class="artist__phone">
+        blinova.mariana@gmail.com <br />
+        +38 (050) 555-58-50
+      </p>
 
+      <span class="artist__quote">“</span>
+
+      <blockquote class="artist__blockquote">
+        «Я БАГАТО ПОДОРОЖУЮ. НА МОЄМУ РАХУНКУ "МАНДРІВНИКА" БІЛЯ 40 КРАЇН
+        СВІТУ,<br />ПОНАД 300 МІСТ СВІТУ, БЕЗЛІЧ НАДЗВИЧАЙНИХ КУТОЧКІВ НАШОЇ
+        ЗЕМЛІ.<br />МОЇ РОБОТИ – ЦЕ РЕФЛЕКСІЯ ПОДОРОЖЕЙ У НАЙДИВОВИЖНІШІ МІСЦЯ
+        НА ПЛАНЕТІ.<br />Я ДІЛЮСЬ З ГЛЯДАЧЕМ МИТТЄВИМ ВРАЖЕННЯМ ВІД ЗАХОДУ СОНЦЯ
+        В ТАНЗАНІЇ, ТРЕКІНГУ ЧЕРЕЗ АВСТРІЙСЬКІ АЛЬПИ ЧИ СИЛИ ОДНОГО З
+        НАЙКРАСИВІШИХ ВУЛКАНІВ ІСЛАНДІЇ»
+      </blockquote>
+      <iframe
+        class="artist__video"
+        src="https://www.youtube.com/embed/HmPDl5ckROY"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </header>
     <main>
-        <section class="artist artist__container">
-            <div class="artist-wrapper">
-                <hr class="art__hr">
-                <p class="artist__font"><em>«Мій основний інструмент <em data-redactor-tag="em">–</em> пластикова трубочка для напоїв. Вбачаю в цьому екологічну місію – зменшення кількості пластику на планеті.</em>»
-                </p>   
-            </div>
-            <div>
-                <p class="artist__text">Шлях до «своєї техніки» був довгим. Мар'яна багато писала аквареллю, олією та пастеллю, поки не спробувала акрил. Художниці стало цікаво спостерігати за змінами,що відбуваються з акрилом, якщо додати в нього клей, фарбу, воду чи силікон; працювати не тільки з кольором, а й з фізичними властивостями фарби. <br><br>Мар'яна практично не працює пензлями. <em>«Мій основний інструмент <em data-redactor-tag="em">–</em> пластикова трубочка для напоїв. Вбачаю в цьому екологічну місію – зменшення кількості пластику на планеті. Пластикові трубочки все ще присутні в нашому побуті. Я не викидаю їх, навпаки – даю нову "роботу" на все життя»</em>, – ділиться художниця. <br><br> Живопису навчалась у майстерні Віктора Троценко, члена НСХУ. Працює у різних жанрах: пейзаж, абстрактний імпресіонізм, пуантилізм. <br>Мар'яна народилася у 1988 році в Києві. Отримала дві вищі освіти за спеціальностями «Міжнародний туризм» та «Журналістика».
-                </p>
-            </div>
-        </section>
+      <section class="artist artist__container">
+        <div class="artist-wrapper">
+          <hr class="art__hr" />
+          <p class="artist__font">
+            <em
+              >«Мій основний інструмент
+              <em data-redactor-tag="em">–</em> пластикова трубочка для напоїв.
+              Вбачаю в цьому екологічну місію – зменшення кількості пластику на
+              планеті.</em
+            >»
+          </p>
+        </div>
+        <div>
+          <p class="artist__text">
+            Шлях до «своєї техніки» був довгим. Мар'яна багато писала аквареллю,
+            олією та пастеллю, поки не спробувала акрил. Художниці стало цікаво
+            спостерігати за змінами,що відбуваються з акрилом, якщо додати в
+            нього клей, фарбу, воду чи силікон; працювати не тільки з кольором,
+            а й з фізичними властивостями фарби. <br /><br />Мар'яна практично
+            не працює пензлями.
+            <em
+              >«Мій основний інструмент
+              <em data-redactor-tag="em">–</em> пластикова трубочка для напоїв.
+              Вбачаю в цьому екологічну місію – зменшення кількості пластику на
+              планеті. Пластикові трубочки все ще присутні в нашому побуті. Я не
+              викидаю їх, навпаки – даю нову "роботу" на все життя»</em
+            >, – ділиться художниця. <br /><br />
+            Живопису навчалась у майстерні Віктора Троценко, члена НСХУ. Працює
+            у різних жанрах: пейзаж, абстрактний імпресіонізм, пуантилізм.
+            <br />Мар'яна народилася у 1988 році в Києві. Отримала дві вищі
+            освіти за спеціальностями «Міжнародний туризм» та «Журналістика».
+          </p>
+        </div>
+      </section>
 
-        <section class="gallery-wrapper">  
-            <div class="gallery"> 
-                 <!-- Swiper -->
-                <div class="swiper-container">
+      <!-- <section class="gallery-wrapper">  
+            <div class="gallery">  -->
+      <!-- Swiper -->
+      <!-- <div class="swiper-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <img  src="../src/img/artists/blinova_mariana/1_h.jpg" alt="">                          
@@ -115,63 +175,89 @@
                       <div class="swiper-slide">
                         <img  src="../src/img/artists/blinova_mariana/2_h.jpg" alt="">                          
                       </div>                                   
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    </div> -->
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div>
                   </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-         </section>
+         </section> -->
 
-         <section class="arist__about">
-            
-            <div class="about-wrapper">
-                <p class="about__header"> Колективні виставки <span class="about__header_icon"></span></p>
-                 <div class="about__header-dnone">  
-                </div>
-         </section>
+      <section id="root" class="gallery-react"></section>
 
-         <section class="catalogues__artist">
-            <div class="catalogues__artist-header">
-               Випуски каталогів / Catalogues' issues
+      <section class="arist__about">
+        <div class="about-wrapper">
+          <p class="about__header">
+            Колективні виставки <span class="about__header_icon"></span>
+          </p>
+          <div class="about__header-dnone"></div>
+        </div>
+      </section>
+
+      <section class="catalogues__artist">
+        <div class="catalogues__artist-header">
+          Випуски каталогів / Catalogues' issues
+        </div>
+        <div class="catalogues__artist-text">
+          за участі Мар'яни Блінової / with the participation of Mariana Blinova
+        </div>
+        <div class="catalogues__art">
+          <a
+            class="slide"
+            href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_v"
+            target="_blank"
+          >
+            <div class="slide__img-hover slide__bg-2">
+              <img
+                class="slide__img"
+                style="margin-top: -25px;"
+                src="../src/img/catalogue/catalogue_2.jpg"
+                alt="catallogue second"
+              />
             </div>
-            <div class="catalogues__artist-text">
-                за участі Мар'яни Блінової / with the participation of Mariana Blinova
-            </div>
-            <div class="catalogues__art">
-                <a class="slide" href="https://issuu.com/artmasters_ukraine/docs/art_masters._part_v" target="_blank">
-                    <div class="slide__img-hover slide__bg-2">
-                        <img class="slide__img" style="margin-top: -25px;" src="../src/img/catalogue/catalogue_2.jpg"  alt="catallogue second">
-                    </div>
-                    
-                    <h3 class="slide__header">Catalogue #2</h3>
-                    <p class="slide__text">Каталог</p>
-                    <p class="slide__link">Читати онлайн / Read online</p>
-                </a>
-            </div>
-        </section>
+
+            <h3 class="slide__header">Catalogue #2</h3>
+            <p class="slide__text">Каталог</p>
+            <p class="slide__link">Читати онлайн / Read online</p>
+          </a>
+        </div>
+      </section>
     </main>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-      centeredSlides: true,
-      spaceBetween: 40,
-      speed: 700,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 40,
+        speed: 700,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
     <script src="../src/js/main.js"></script>
     <script src="../src/js/artists-slider.js"></script>
-</body>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      type="text/babel"
+      src="../src/js/react-gallery/react-gallery-blinova.js"
+    ></script>
+  </body>
 </html>

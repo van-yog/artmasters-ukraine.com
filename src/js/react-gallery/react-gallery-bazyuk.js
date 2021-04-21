@@ -16,23 +16,6 @@ class App extends React.Component {
       isRight: true,
       thumbsPush: false,
       text: [
-        `Ворони / Crows,
-        полотно олія / canvas, oil
-          80x110 cm`,
-        `Півень / A cock
-          полотно, олія / canvas, oil
-          75x105 cm`,
-        'Картина 3, Гуаш, Холст 300*500',
-        'Картина 4, Масло, Холст',
-        'Картина 5, Масло, Холст 200*10',
-        'Картина 6, Акварель, Холст',
-        'Картина 7, Гуаш, Холст',
-        'Картина 8, Масло, Холст',
-        'Картина 9, Масло, Холст',
-        'Картина 10, Масло, Холст',
-        'Картина 11, Масло, Холст',
-        'Картина 12, Масло, Холст',
-        'Картина 13, Масло, Холст',
       ],
     };
   }
@@ -98,14 +81,14 @@ class App extends React.Component {
                     currentPhoto === idx ? (isRight ? 'toLeft' : 'toRight') : ''
                   }
                   ${prevPhoto === idx && 'hidePhoto'}`}
-                href={`../src/img/artists/zhukow_andrii/react-gallery/${
+                href={`../src/img/artists/bazyuk_sviatoslav/react-gallery/${
                   idx + 1
                 }.jpg`}
                 target="_blank"
               >
                 <img
                   className={`gallery__main-img`}
-                  src={`../src/img/artists/zhukow_andrii/react-gallery/${
+                  src={`../src/img/artists/bazyuk_sviatoslav/react-gallery/${
                     idx + 1
                   }.jpg`}
                 />
@@ -118,7 +101,7 @@ class App extends React.Component {
         </div>
 
         <div className="gallery__text">
-          {this.state.text[this.state.currentPhoto]
+          {this.state.text.length ? this.state.text[this.state.currentPhoto]
             .split('\n')
             .map((item, idx) => {
               let arr = item.split('/');
@@ -128,7 +111,7 @@ class App extends React.Component {
                   <span>{arr[0]}</span> / <span>{arr[1]}</span>
                 </p>
               );
-            })}
+            }) : null}
         </div>
 
         <div
@@ -163,7 +146,7 @@ class App extends React.Component {
                 }}
                 key={item}
                 data-id={idx}
-                src={`../src/img/artists/zhukow_andrii/react-gallery/${
+                src={`../src/img/artists/bazyuk_sviatoslav/react-gallery/${
                   idx + 1
                 }.jpg`}
                 onClick={() => this.thumbsPush(idx)}
@@ -172,19 +155,21 @@ class App extends React.Component {
           })}
         </div>
         <div className="gallery__show-all">
-          <button
-            id="showAll"
-            onClick={() => this.showAllGallery()}
-            type="button"
-          >
-            {!this.state.showAll
-              ? 'Більше робіт / More artworks'
-              : 'Менше робіт / Less artworks'}
-          </button>
+          {this.state.allPhoto > 7 ?
+            <button
+              id="showAll"
+              onClick={() => this.showAllGallery()}
+              type="button"
+            >
+              {!this.state.showAll 
+                ? 'Більше робіт / More artworks'
+                : 'Менше робіт / Less artworks'}
+            </button>
+          : null}
         </div>
       </React.Fragment>
     );
   }
 }
 
-ReactDOM.render(<App imgs={13} />, root);
+ReactDOM.render(<App imgs={19} />, root);

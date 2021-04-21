@@ -23,7 +23,12 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link
       rel="shortcut icon"
       href="../src/img/logo_favicon.png"
@@ -276,38 +281,38 @@
       <script>
         let isShowAll = false;
 
-        let list = document.querySelectorAll('.list-inline-item');
+        let list = document.querySelectorAll(".list-inline-item");
         function showAll() {
-          let btn = document.getElementById('showAll');
+          let btn = document.getElementById("showAll");
           btn.innerHTML = isShowAll
-            ? 'Показать всю галерею'
-            : 'Скрыть всю галерею';
+            ? "Показать всю галерею"
+            : "Скрыть всю галерею";
           isShowAll = !isShowAll;
 
           if (isShowAll) {
-            list.forEach((item, i) => (item.style = 'display: flex'));
+            list.forEach((item, i) => (item.style = "display: flex"));
           } else {
             setTimeout(() => {
-              let li = document.querySelectorAll('.list-inline-item');
-              let liActive = document.querySelector('.list-inline-item.active');
-              console.log('active=', liActive.dataset.showId);
+              let li = document.querySelectorAll(".list-inline-item");
+              let liActive = document.querySelector(".list-inline-item.active");
+              console.log("active=", liActive.dataset.showId);
               let id = liActive.dataset.showId;
 
               li.forEach((item, i) => {
                 if (id > 1 && id < li.length - 2) {
                   if (-3 < id - i && id - i < 3) {
-                    item.style = 'display:flex';
+                    item.style = "display:flex";
                   } else {
-                    item.style = 'display:none';
+                    item.style = "display:none";
                   }
                 }
                 if (id <= 1) {
-                  if (i < 5) item.style = 'display:flex';
-                  else item.style = 'display:none';
+                  if (i < 5) item.style = "display:flex";
+                  else item.style = "display:none";
                 }
                 if (id >= li.length - 2) {
-                  if (li.length - i <= 5) item.style = 'display:flex';
-                  else item.style = 'display:none';
+                  if (li.length - i <= 5) item.style = "display:flex";
+                  else item.style = "display:none";
                 }
               });
             }, 100);
@@ -315,50 +320,50 @@
         }
 
         list.forEach((item, i) => {
-          item.setAttribute('data-show-id', i);
+          item.setAttribute("data-show-id", i);
           if (i > 4) {
-            item.style = 'display: none';
+            item.style = "display: none";
           }
         });
 
-        let ol = document.querySelectorAll('.list-inline-item');
+        let ol = document.querySelectorAll(".list-inline-item");
 
-        let prev = document.querySelector('.carousel-control-prev');
-        let next = document.querySelector('.carousel-control-next');
+        let prev = document.querySelector(".carousel-control-prev");
+        let next = document.querySelector(".carousel-control-next");
 
-        prev.addEventListener('click', handleThumbs);
-        next.addEventListener('click', handleThumbs);
+        prev.addEventListener("click", handleThumbs);
+        next.addEventListener("click", handleThumbs);
 
         function handleThumbs({ target }) {
           if (isShowAll) return;
           setTimeout(() => {
-            let li = document.querySelectorAll('.list-inline-item');
-            let liActive = document.querySelector('.list-inline-item.active');
-            console.log('active=', liActive.dataset.showId);
+            let li = document.querySelectorAll(".list-inline-item");
+            let liActive = document.querySelector(".list-inline-item.active");
+            console.log("active=", liActive.dataset.showId);
             let id = liActive.dataset.showId;
 
             li.forEach((item, i) => {
               if (id > 1 && id < li.length - 2) {
                 if (-3 < id - i && id - i < 3) {
-                  item.style = 'display:flex';
+                  item.style = "display:flex";
                 } else {
-                  item.style = 'display:none';
+                  item.style = "display:none";
                 }
               }
               if (id <= 1) {
-                if (i < 5) item.style = 'display:flex';
-                else item.style = 'display:none';
+                if (i < 5) item.style = "display:flex";
+                else item.style = "display:none";
               }
               if (id >= li.length - 2) {
-                if (li.length - i <= 5) item.style = 'display:flex';
-                else item.style = 'display:none';
+                if (li.length - i <= 5) item.style = "display:flex";
+                else item.style = "display:none";
               }
             });
           }, 100);
         }
 
         ol.forEach((item) =>
-          item.addEventListener('click', handleThumbs, true)
+          item.addEventListener("click", handleThumbs, true)
         );
         console.log(ol);
       </script>
@@ -415,7 +420,7 @@
             <div class="slide__img-hover slide__bg-2">
               <img
                 class="slide__img"
-                style="margin-top: -25px"
+                style="margin-top: -25px;"
                 src="../src/img/catalogue/catalogue_2.jpg"
                 alt="catallogue second"
               />
@@ -431,17 +436,17 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 40,
         speed: 700,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
       });
@@ -459,6 +464,9 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" src="../src/js/react-gallery.js"></script>
+    <script
+      type="text/babel"
+      src="../src/js/react-gallery/react-gallery.js"
+    ></script>
   </body>
 </html>
