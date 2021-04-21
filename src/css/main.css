@@ -1813,7 +1813,8 @@ pre {
 }
 
 .gallery__main-img {
-  height: 65vh;
+  max-height: 65vh;
+  max-width: 85vw;
   -webkit-box-shadow: 0 0px 20px 10px grey;
           box-shadow: 0 0px 20px 10px grey;
 }
@@ -1872,6 +1873,7 @@ pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
